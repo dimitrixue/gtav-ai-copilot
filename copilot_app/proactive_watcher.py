@@ -4,16 +4,19 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 import tempfile
 import time
 from pathlib import Path
 
 from capture_and_telemetry import TELEMETRY_PATH, capture_screen_base64
 from deepseek_client import stream_multimodal
-from data_kb.rag_retriever import get_tactical_context
 
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT.parent))
+from data_kb.rag_retriever import get_tactical_context
+
 POI_PATH = ROOT / "data_kb" / "world_pois.json"
 COMMAND_PATH = Path(tempfile.gettempdir()) / "gtav_ai_commands.json"
 EVENT_COOLDOWN = 15.0
@@ -97,6 +100,12 @@ def classify_event(current: dict, previous: dict) -> str | None:
 
 
 def advise(telemetry: dict, event: str) -> str:
+    env_file = ROOT.parent / ".env"
+    if env_file.exists():
+        for line in env_file.read_text(encoding="utf-8").splitlines():
+            if "=" in line and not line.lstrip().startswith("#"):
+                key, value = line.split("=", 1)
+                os.environ.setdefault(key.strip(), value.strip().strip("\"'"))
     context = get_tactical_context(telemetry)
     prompt = (
         "You are an event-driven GTA V Story Mode tactical advisor. "
