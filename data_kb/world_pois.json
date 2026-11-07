@@ -1,5 +1,7 @@
 {
   "schema_version": 1,
   "language": "zh-CN",
+  "coordinate_system": "GTA world X/Y/Z",
+  "note": "No imported POIs yet: available collectible source uses custom Google Maps lat/lng, and no verified transform to GTA world coordinates is available.",
   "pois": []
 }

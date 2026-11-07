@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-11-07T08:58:17Z",
+  "sources": [
+    {
+      "repository": "GTA Wiki",
+      "url": "https://gta.fandom.com/wiki/Missions_in_GTA_V",
+      "license": "CC BY-SA",
+      "used_for": "Mission catalog, walkthroughs, gold medal criteria"
+    },
+    {
+      "repository": "DurtyFree/gta-v-data-dumps",
+      "url": "https://github.com/DurtyFree/gta-v-data-dumps",
+      "default_branch": "master",
+      "license_spdx": null,
+      "license_status": "no_license_file_detected",
+      "commit": "b65684e00f689fdec405c5f1055322c802d3c895"
+    },
+    {
+      "repository": "danharper/GTAV",
+      "url": "https://github.com/danharper/GTAV",
+      "default_branch": "master",
+      "license_spdx": "WTFPL",
+      "license_status": "declared",
+      "commit": "584f2f1d2d1b33dd8a9e1dd8c0c55f37f002c4c3"
+    },
+    {
+      "repository": "root-cause/v-decompiled-scripts",
+      "url": "https://github.com/root-cause/v-decompiled-scripts",
+      "default_branch": "master",
+      "license_spdx": null,
+      "license_status": "no_license_file_detected",
+      "commit": "7a800e34172bc50f13b07884ca55942028e8c8d0"
+    },
+    {
+      "repository": "Foxxite/GTAV-Geo-Json",
+      "url": "https://github.com/Foxxite/GTAV-Geo-Json",
+      "license_status": "no_license_file_detected",
+      "used_for": "Candidate map geometry source; not imported until game-coordinate conversion is verified"
+    }
+  ],
+  "output_counts": {
+    "entity_catalog": {
+      "vehicles": 921,
+      "weapons": 184,
+      "zones": 97
+    },
+    "collectibles_map_by_type": {
+      "Nuclear Waste": 30,
+      "Money": 12,
+      "Spaceship Part": 50,
+      "Stunt Jump": 50,
+      "Letter Scrap": 50,
+      "Knife Flight": 15,
+      "Vehicle Spawn": 4,
+      "Epsilon Car": 5,
+      "Epsilon Tract": 10,
+      "Under the Bridge": 50
+    },
+    "mission_script_filenames": 1106,
+    "mission_catalog": {
+      "story_missions": 73,
+      "side_missions": 55,
+      "strangers_and_freaks": 43
+    }
+  },
+  "policy": "The source list may include unlicensed repositories. Do not redistribute their payloads without checking their current license terms."
+}
