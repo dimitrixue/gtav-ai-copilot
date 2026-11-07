@@ -115,6 +115,14 @@
         "title": "Prologue",
         "url": "https://gta.fandom.com/wiki/Prologue",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_only"
       }
     },
     "armenian1": {
@@ -160,6 +168,35 @@
         "title": "Franklin and Lamar",
         "url": "https://gta.fandom.com/wiki/Franklin_and_Lamar",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Not a Scratch – Deliver the repossessed car with minimal damage.",
+          "condition": "Not a Scratch – Deliver the repossessed car with minimal damage.",
+          "tip": "Try to avoid crashing. Use Franklin's special ability to avoid collisions."
+        },
+        {
+          "name": "Focused Driver – Use Franklin's special ability for 7 seconds.",
+          "condition": "Focused Driver – Use Franklin's special ability for 7 seconds.",
+          "tip": "With the other objectives, this one should come naturally."
+        },
+        {
+          "name": "Winner – Win the race against Lamar.",
+          "condition": "Winner – Win the race against Lamar.",
+          "tip": "Before entering the Union Depository, there will be two tunnels. Lamar drives through the right-hand tunnel. Drive through the left-hand tunnel and use Franklin's special ability to pass him."
+        },
+        {
+          "name": "We Come in Peace – Avoid hitting any aliens in the movie studio.",
+          "condition": "We Come in Peace – Avoid hitting any aliens in the movie studio.",
+          "tip": "Use Franklin's special ability to navigate the studio."
+        }
+      ],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "sourced",
+        "summary_status": "gold_only"
       }
     },
     "armenian2": {
@@ -202,6 +239,35 @@
         "title": "Repossession",
         "url": "https://gta.fandom.com/wiki/Repossession",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Mission Time – Complete within 06:30.",
+          "condition": "Mission Time – Complete within 06:30.",
+          "tip": "Skip the cutscenes. The Vagos showing up after the Penumbra are the last foes the player needs to kill. After this, the bike and its owner will spawn and start fleeing behind the fence. At that moment the player will have a chance to shoot the biker and avoid the car chase all together. Picking a suitable car at Simeon's place and excellent driving skill, coupled with Franklin's special ability, makes the chase easier."
+        },
+        {
+          "name": "Trail Blazer – Shoot the gasoline trail.",
+          "condition": "Trail Blazer – Shoot the gasoline trail.",
+          "tip": "The Penumbra will flee, leaving a gas trail in the process for Franklin to shoot at, eliminating the threat, as it blows up the car and the occupants."
+        },
+        {
+          "name": "Headshots – Kill 6 enemies with a headshot.",
+          "condition": "Headshots – Kill 6 enemies with a headshot.",
+          "tip": "Kill as many enemies as possible with a headshot within quick succession."
+        },
+        {
+          "name": "Accuracy – Finish with a shooting accuracy of at least 70%.",
+          "condition": "Accuracy – Finish with a shooting accuracy of at least 70%.",
+          "tip": "Doing non-headshots with a low damage weapon will allow Franklin to score more hits."
+        }
+      ],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "gold_only"
       }
     },
     "armenian3": {
@@ -289,6 +355,30 @@
         "title": "Complications",
         "url": "https://gta.fandom.com/wiki/Complications",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 05:00.",
+          "tip": "Skip the cutscenes. Don't try any doors, go straight onto the truck and move quickly through the house. Running while aiming down the sight is the fastest way to move through the house without being detected."
+        },
+        {
+          "name": "Can't Touch This",
+          "condition": "Can't Touch This - Take no damage during the fight with Simeon.",
+          "tip": "Use the ability right before the fight starts to get an advantage and then repeatedly punch Simeon, without stopping, to stop Simeon doing counter-attacks. Kick Simeon to the ground instantly, then repeatedly attack him to prevent him from getting up."
+        },
+        {
+          "name": "Dirt Nap",
+          "condition": "Dirt Nap - Knock out the gardener with a stealth attack.",
+          "tip": "Jump the wall, go into stealth mode and walk over to Carlos and press either (on PlayStation versions), (on Xbox versions) or either or (on PC) once."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "father_son": {
@@ -359,6 +449,25 @@
         "title": "Father/Son",
         "url": "https://gta.fandom.com/wiki/Father/Son",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Quick Catch",
+          "condition": "Quick Catch - Rescue Jimmy within 10 seconds.",
+          "tip": "Immediately go towards the mast once Jimmy is visible, and make sure to keep the car steady underneath it while still avoiding traffic."
+        },
+        {
+          "name": "Not a Scratch",
+          "condition": "Not a Scratch - Deliver Amanda's car with minimal damage.",
+          "tip": "Drive back carefully."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "marriage_counseling": {
@@ -428,6 +537,30 @@
         "title": "Marriage Counseling",
         "url": "https://gta.fandom.com/wiki/Marriage_Counseling",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Not a Scratch",
+          "condition": "Not a Scratch - Complete with minimal damage to the Bison.",
+          "tip": "Drive carefully and try not to ram vehicles or take shortcuts."
+        },
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 05:30.",
+          "tip": "Skip the cutscenes."
+        },
+        {
+          "name": "Drive-by Killer",
+          "condition": "Drive-by Killer - Kill 3 enemies whilst in a vehicle.",
+          "tip": "Kill enemies as Franklin during the chase. If the player has them, use sticky bombs. This can also be done with Michael."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "daddy_s_little_girl": {
@@ -509,6 +642,30 @@
         "title": "Daddy's Little Girl",
         "url": "https://gta.fandom.com/wiki/Daddy%27s_Little_Girl",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Fastest Speed",
+          "condition": "Fastest Speed - Reach top speed on the Seashark.",
+          "tip": "Focus on losing the enemies rather than shooting them. Leaning forward will keep the boat to the surface, prolonging the acceleration and thus reaching higher speeds. Going parallel with the seashore will allow Michael to avoid waves, which could otherwise bump the boat into the air and disrupt acceleration."
+        },
+        {
+          "name": "Stabilizer",
+          "condition": "Stabilizer - Don't fall off the bicycle.",
+          "tip": "Avoid hitting NPCs. Stay away from walls and be cautious around obstacles and the staircases. Michael does not really need to win the race, so take it slow."
+        },
+        {
+          "name": "Faster Than Fish",
+          "condition": "Faster Than Fish - Swim to the boat within 01:00.",
+          "tip": "This is all about judging the current of the waves. Swimming underwater will also make Michael swim faster than if he swam on the surface. Improving Michael's stamina level may make this objective easier."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "chop": {
@@ -554,6 +711,30 @@
         "title": "Chop (mission)",
         "url": "https://gta.fandom.com/wiki/Chop_%28mission%29",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Not a Scratch",
+          "condition": "Not a Scratch - Complete with minimal damage to Lamar's van.",
+          "tip": "Use the ability as much as possible to avoid crashing into vehicles during the chase. There are several buses."
+        },
+        {
+          "name": "Homedog",
+          "condition": "Homedog - Enter Chop's perspective for 10 seconds.",
+          "tip": "Switch to Chop while he is looking for D in the cars, and leave as him while he goes to the other dog."
+        },
+        {
+          "name": "Advanced Reflexes",
+          "condition": "Advanced Reflexes - Use Franklin's special ability for 7 seconds.",
+          "tip": "Same as the chase and minimal damage achievement."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "the_long_stretch": {
@@ -640,6 +821,35 @@
         "title": "The Long Stretch",
         "url": "https://gta.fandom.com/wiki/The_Long_Stretch",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 60%.",
+          "tip": "Performing non-headshots with a low damage weapon will allow Franklin to score more hits. Using a Shotgun on the other hand will land hits easier due to its spread."
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 10 enemies with a headshot.",
+          "tip": "Aim for the head with the shotgun. Neck shots also count."
+        },
+        {
+          "name": "Unmarked",
+          "condition": "Unmarked - Complete with minimal damage to health and armor.",
+          "tip": "Prior to the final big room, using an automatic weapon will allow Franklin to drop foes before they can damage him. While in the final room, taking cover on the right hugging the wall will grant Franklin the most safety."
+        },
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 10:30.",
+          "tip": "Skip all cutscenes. Steal the Jackal and use Franklin's special ability to lose the cops. Try finding a safe area like the subway tunnel next to the Mile High Club, or the metro tunnel off the freeway or below Mirror Park."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "lester1": {
@@ -734,6 +944,25 @@
         "title": "Friend Request",
         "url": "https://gta.fandom.com/wiki/Friend_Request",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 08:30.",
+          "tip": "Skip the cutscenes. Take the backdoor again while leaving. This will allow Michael to start running earlier."
+        },
+        {
+          "name": "Popups Clear",
+          "condition": "Popups Clear - Clear all popups within 32 seconds.",
+          "tip": "Move as fast as possible. Otherwise activate Michael's ability before the cutscene triggers, this will slow down time allowing the player to clear the popups in less time. When clearing the popups, the player won't be able to see Michael's ability; however, after finishing the mission, it will show that they cleared the popups in a shorter amount of time. Don't bother trying to start up the anti-virus software until all pop-ups have been closed as it won't work."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "jewelry_setup1": {
@@ -834,6 +1063,25 @@
         "title": "Casing the Jewel Store",
         "url": "https://gta.fandom.com/wiki/Casing_the_Jewel_Store",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 08:00.",
+          "tip": "Skip the cutscenes."
+        },
+        {
+          "name": "Picture Perfect",
+          "condition": "Picture Perfect - Capture all three security features in one picture.",
+          "tip": "Look directly at the keypad and all three features will be visible in the corners. Achieving this does not require taking just one picture with all three features; the game just needs to register a picture that has all three features within it, even if it is not the first one that was taken."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "carbine_rifles": {
@@ -881,6 +1129,20 @@
         "title": "Carbine Rifles",
         "url": "https://gta.fandom.com/wiki/Carbine_Rifles",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Swift Getaway",
+          "condition": "Swift Getaway - Lose the wanted level within 2 minutes.",
+          "tip": "Steal the car near the Burton LS Customs and use the nearby metro tunnel to lose the cops."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "bugstars_equipment": {
@@ -928,6 +1190,20 @@
         "title": "Bugstars Equipment",
         "url": "https://gta.fandom.com/wiki/Bugstars_Equipment",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Sneaky Pest",
+          "condition": "Sneaky Pest - Steal the Bugstars van without being detected.",
+          "tip": "Sneak in the back, knock out the driver of the central located van, and quickly drive out the back. Don't drive too close to the back; the employee will hear the vehicle."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "bz_gas_grenades": {
@@ -975,6 +1251,20 @@
         "title": "BZ Gas Grenades",
         "url": "https://gta.fandom.com/wiki/BZ_Gas_Grenades",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Loose Cargo",
+          "condition": "Loose Cargo - Shoot open the back doors to release the cargo.",
+          "tip": "Use a machine gun whilst on the freeway, wait for the doors to pop and quickly flee the area. A one star wanted level will be obtained, although it will be two stars if the player kills one of the guards in the Boxville."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "jewelry_heist": {
@@ -1015,6 +1305,30 @@
         "title": "The Jewel Store Job",
         "url": "https://gta.fandom.com/wiki/The_Jewel_Store_Job",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Quick Grab",
+          "condition": "Quick Grab - Steal the jewelry within 50 seconds.",
+          "tip": "Note that this is not the same as Clean Sweep: all that is required is that you grab the minimum $3.3 million in jewelry and leave the store within 50 seconds. Move as fast as possible with either approach. In the loud approach, hire a good gunman (Gus or Packie), since otherwise dealing with the store manager will cost Michael precious time. Using first person view helps as there is no delay between the character moving and the animation of breaking each of the glass cabinets (PS4, Xbox One and PC only). Shooting the glass will remove the breaking animation, making it a bit faster. Using Michael's special ability before breaking the cases will also save some time. If this is proving difficult, use Rickie Lukens as the hacker, since the alarm will go off after 50 seconds, autofailing the mission and allowing a checkpoint retry."
+        },
+        {
+          "name": "Protégé Protected",
+          "condition": "Protégé Protected - Protect Franklin during the LS River chase.",
+          "tip": "It can simply be done without failing the mission; make sure Franklin is not killed by the LSPD during the chase."
+        },
+        {
+          "name": "Clean Sweep",
+          "condition": "Clean Sweep - Steal the jewelry from all 20 glass cabinets.",
+          "tip": "Move fast and use Patrick McReary or Gustavo Mota as the gunman, and (for the loud approach only) Eddie Toh as the driver."
+        }
+      ],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "sourced",
+        "summary_status": "gold_only"
       }
     },
     "trevor1": {
@@ -1073,6 +1387,40 @@
         "title": "Mr. Philips",
         "url": "https://gta.fandom.com/wiki/Mr._Philips",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "No Survivors",
+          "condition": "No Survivors - Kill all fleeing bikers.",
+          "tip": "Take out all members on the left entrance road first, remembering to kill with headshots where possible, using Trevor's special ability can also help. After taking out the members on the left hand side of the park, proceed through the center of the park, taking out the members escaping on bikes from the left. Exploding the gas canisters next to the trailers on the right entrance road can also eliminate any remaining bikers. After the majority are killed, up to three remaining bikers will be indicated on the map with flashing blue/red markers, these bikers are the ones to be killed to gain the objective. If the player stuck to the left of the park, these members will usually flee to the main road, rather than the hills, making it easier to reach and kill them. They will not retaliate."
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 12 enemies with a headshot.",
+          "tip": "Kill as many enemies as possible with a headshot. Using Trevor's special ability is advised, and using shotguns close range, with time to concentrate on the head of the target can also be effective"
+        },
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 12:00.",
+          "tip": "Skip cutscenes and avoid chasing remaining members as a very last resort. Use the available shortcuts enroute if possible."
+        },
+        {
+          "name": "Trailer Trashed",
+          "condition": "Trailer Trashed - Cause $5,000 damage to Ortega's trailer.",
+          "tip": "Make sure to push the trailer fully into the river by continuing the accelerate against it while it rolls down the banking."
+        },
+        {
+          "name": "Lost and Damned",
+          "condition": "Lost and Damned - Kill Terry and Clay during the chase.",
+          "tip": "As Trevor states at the beginning of the chase, the gang members in the van need to be kept while the two escort bikers can go; take out the bikers at the beginning of the chase to avoid losing them in the park later on."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "sourced",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "nervous_ron": {
@@ -1182,6 +1530,40 @@
         "title": "Nervous Ron",
         "url": "https://gta.fandom.com/wiki/Nervous_Ron",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 5 enemies with a headshot.",
+          "tip": "This is easily done when scoping the enemies from the water tower, as the player is not moving. Using Trevor's special ability during the shootout on the way to the plane can also give the player more time to focus on aiming for close range headshots."
+        },
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 12:30.",
+          "tip": "Skip the cutscenes, kill the bikers before Ron alerts the player about them, and keep the plane straight and steady at all times. Trevor's special ability can be used to take low damage while taking out lots of enemies quickly."
+        },
+        {
+          "name": "Nervous Twitch",
+          "condition": "Nervous Twitch - Win the race against Ron.",
+          "tip": "While this is naturally easier because Ron automatically slows down upon the start of the race and due to Trevor's high default flying stats, this can be done by keeping low and cutting long corners."
+        },
+        {
+          "name": "6 Bridges, 1 Plane",
+          "condition": "6 Bridges, 1 Plane - Fly under any 6 bridges found along the flight path.",
+          "tip": "The easiest options are the three bridges along Cassidy Creek (the small road bridge at the eastern end of the river, the Calafia Train Bridge and the Cassidy Creek Bridge) and the bridges along Zancudo River (the Zancudo Bridge, Fort Zancudo Approach Road and either two of the smaller road bridges at the eastern mouth of the river). Avoid the smaller bridges, such as the cabin bridge and smaller road bridge on Zancudo River, as they can usually destroy the plane because of a lack of room."
+        },
+        {
+          "name": "Death on a Wing",
+          "condition": "Death on a Wing - Kill all bikers whilst lying on the plane wing.",
+          "tip": "On the way out, kill any remaining enemies around the hangar, and immediately shoot the gas tanker to the right of the hangar, before taking out the enemies opposite the hangar who will arrive on bikes and in Gang Burritos. The vans tend to burst into flames upon several shots, although gang members may escape the flames, so the player must be alert. A biker will chase the plane as it approaches the second Cuban 800, failing to kill this biker will result in him fleeing ahead and running towards the plane. The members chasing the second plane (when Trevor gains control) do not need to be killed."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "trevor_philips_industries": {
@@ -1256,6 +1638,35 @@
         "title": "Trevor Philips Industries",
         "url": "https://gta.fandom.com/wiki/Trevor_Philips_Industries",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Body Count",
+          "condition": "Body Count - Kill 32 enemies.",
+          "tip": "Shoot all enemies, and instead of going to the interior of the store in the ending shootout, go outside onto the road and blow up the fleeing Phoenixes."
+        },
+        {
+          "name": "Unmarked",
+          "condition": "Unmarked - Complete with minimal damage to health and armor.",
+          "tip": "Keep cover during the fight. Using hand grenades and grenade launchers will allow Trevor to kill off enemies before they can do much damage."
+        },
+        {
+          "name": "Scrap Man",
+          "condition": "Scrap Man - Destroy 6 Vehicles.",
+          "tip": "There are several gas canisters on the west side where the fight starts. At least four can be blown up here, and the two fleeing cars can be blown up as stated before at the end. Be careful on the east side if the player wishes to obtain a Phoenix."
+        },
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 4:30",
+          "tip": "Skip the cutscenes."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "crystal_maze": {
@@ -1336,6 +1747,35 @@
         "title": "Crystal Maze",
         "url": "https://gta.fandom.com/wiki/Crystal_Maze",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 10 enemies with a headshot.",
+          "tip": "Perhaps an oversight, the player's headshots only count for the 10 enemies who are clearly visible from the vantage point. There's two on the lower left most playing a \"shoot the can\" game with pistols, one drinking on the left of the ground floor, one scouting and two chatting on the second floor, two chatting and two loading a van on the lower right. If Trevor takes too long, two of the O'Neil brothers will finish loading the van and drive off. Trevor will comment on this. Normally this just means that the player has two less enemies to worry about. But if one wants all of the headshots to be registered, those two must be killed before they leave, ideally before they get into the van."
+        },
+        {
+          "name": "Unmarked",
+          "condition": "Unmarked - Complete with minimal damage to health and armor.",
+          "tip": "Killing all 10 enemies from the vantage point stealthily will greatly conserve the player's health and armor. Some of the brothers are loading a van, letting them go makes things less complicated. However, killing them is required to get the gold medal. When assaulting the building, going in from the back door will give the player more cover."
+        },
+        {
+          "name": "2 Birds 1 Stone",
+          "condition": "2 Birds 1 Stone - Kill 2 enemies with one shot.",
+          "tip": "It can be easily done as several brothers are having conversations, thus the bullet can kill them both linearly."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 80%.",
+          "tip": "Using a low damage weapon will allow Trevor to score more hits should he miss too much earlier."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "friends_reunited": {
@@ -1422,6 +1862,35 @@
         "title": "Friends Reunited",
         "url": "https://gta.fandom.com/wiki/Friends_Reunited",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 5 enemies with a headshot.",
+          "tip": "Several bikers are around, use suppressed weapons to kill them with headshots to avoid detection, see the video for help."
+        },
+        {
+          "name": "Mystery Gift",
+          "condition": "Mystery Gift - Destroy the trailers without being detected.",
+          "tip": "Same as before, try to kill any witnesses quickly and use a suppressed weapon. Shooting lights out will make Trevor hard to detect. There's a set piece where 2 bikers are bullying another. The victim will just run away and not compromise you. Another set piece involves a biker quarreling with a woman in a trailer, killing the biker will confuse the woman but this won't get Trevor detected."
+        },
+        {
+          "name": "Unmarked",
+          "condition": "Unmarked - Complete with minimal damage to health and armor.",
+          "tip": "Quietly getting through the site means no shootout."
+        },
+        {
+          "name": "Perfect Gift",
+          "condition": "Perfect Gift - Destroy all trailers at once.",
+          "tip": "Don't blow up the trailers until all bombs are planted."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "family4": {
@@ -1500,6 +1969,35 @@
         "title": "Fame or Shame (mission)",
         "url": "https://gta.fandom.com/wiki/Fame_or_Shame_%28mission%29",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Fastest Speed",
+          "condition": "Fastest Speed - Reach top speed in the Phantom.",
+          "tip": "Drive as quickly as possible on the Hawick and Davis Avenue straights. Avoid hitting oncoming cars, traffic-light poles or any other poles, or any other heavy obstacles as much as possible. Unhooking the trailer will aid acceleration, thus achieving higher speed (however, this will bar achieving the All Hooked Up Objective, thus failing the gold medal)."
+        },
+        {
+          "name": "Bearing Down",
+          "condition": "Bearing Down - Stay close to Lazlow throughout the chase.",
+          "tip": "Keeping Lazlow within the view of the camera (which has a leeway of 180 degrees) should make achieving this objective possible. Using the third-person camera is recommended as Trevor to keep Lazlow in sight after getting in the Phantom, which is difficult to execute properly using the first-person camera. Drive carefully around traffic, traffic-light poles, and near the railway lines, but ram down any obstacle that does not hamper the truck."
+        },
+        {
+          "name": "No, I Can Park Here",
+          "condition": "No, I Can Park Here - Knock out the Event Coordinator.",
+          "tip": "Punch the shouting man with a clipboard next to the parking space."
+        },
+        {
+          "name": "All Hooked Up",
+          "condition": "All Hooked Up - Don't unhook the trailer.",
+          "tip": "Do not press the button prompt and avoid hitting oncoming cars and jackknifing the truck."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "sourced",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "dead_man_walking": {
@@ -1585,6 +2083,40 @@
         "title": "Dead Man Walking",
         "url": "https://gta.fandom.com/wiki/Dead_Man_Walking",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 70%.",
+          "tip": "Using a low damage weapon will score more hits, upping the accuracy stat."
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 14 enemies with a headshot.",
+          "tip": "Michael's special ability may greatly aid the player on this objective. Headshots can quickly refill the special ability bar."
+        },
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 09:30.",
+          "tip": "Skip the cutscenes. The Felon is useful for a quick escape. Shoot the window once Michael is out of the dumpster and use the rear exit of the coroner's office to avoid the police."
+        },
+        {
+          "name": "Focused Killer",
+          "condition": "Focused Killer - Kill 4 enemies using Michael's special ability.",
+          "tip": "Kill most enemies with the special ability. It also helps for the headshot objective."
+        },
+        {
+          "name": "Unmarked",
+          "condition": "Unmarked - Complete with minimal damage to health and armor.",
+          "tip": "Take cover throughout the mission and don't pick up weapons and armor until all enemies are dead on the last floor. Having armor prior to the mission will reduce the damage taken. If playing as part of the story there's one near the Observatory."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "three_s_company": {
@@ -1678,6 +2210,30 @@
         "title": "Three's Company",
         "url": "https://gta.fandom.com/wiki/Three%27s_Company",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 07:30.",
+          "tip": "Skip cutscenes. After taking down the enemy chopper which is pursuing Franklin, switch to Trevor as soon as possible and fly directly to the lot. Michael will take care of the remaining choppers. Switch back to Trevor for the landing, otherwise he will hover over the lot."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 60%.",
+          "tip": "Bodyshoting as Michael will let him score more hits, increasing the accuracy stat should the player ever miss. Switch to Michael as soon as he is available. His special ability helps. Once Michael is extracted and Franklin is safe, switch to Trevor and circle near Franklin. Let Michael and Franklin shoot the chasing choppers down, or fly directly to the lot as Michael can single-handedly take care of the choppers himself. This way the player won't risk missing."
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 10 enemies with headshots.",
+          "tip": "Again, Michael's special ability will make this rather easy. Sniping with Franklin will as well."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "by_the_book": {
@@ -1775,6 +2331,40 @@
         "title": "By the Book",
         "url": "https://gta.fandom.com/wiki/By_the_Book",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Don't Stop Me Now",
+          "condition": "Don't Stop Me Now - Complete without Kerimov's heart stopping.",
+          "tip": "Kerimov's heart rate will stop if it passes 200 BPM."
+        },
+        {
+          "name": "Electrocutioner",
+          "condition": "Electrocutioner - Electrocute Kerimov.",
+          "tip": "Perform this third, keeping an eye on Kerimov's BPM."
+        },
+        {
+          "name": "The Tooth Hurts",
+          "condition": "The Tooth Hurts - Pull out Kerimov's tooth.",
+          "tip": "Perform this second."
+        },
+        {
+          "name": "Wrenched",
+          "condition": "Wrenched - Hit Kerimov with the wrench.",
+          "tip": "Perform this first."
+        },
+        {
+          "name": "It's Legal!",
+          "condition": "It's Legal! - Waterboard Kerimov.",
+          "tip": "Performing this last (as it does the least damage) and in short bursts gives a better chance of Kerimov not passing out."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "scouting_the_port": {
@@ -1927,6 +2517,35 @@
         "title": "Scouting the Port",
         "url": "https://gta.fandom.com/wiki/Scouting_the_Port",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 20:00.",
+          "tip": "Skip all cutscenes."
+        },
+        {
+          "name": "Employee of the Month",
+          "condition": "Employee of the Month - Complete without damaging the containers.",
+          "tip": "Drive the handler carefully."
+        },
+        {
+          "name": "Perfect Surveillance",
+          "condition": "Perfect Surveillance - Snap all 3 photographs of the boat as instructed.",
+          "tip": "Follow all instructions."
+        },
+        {
+          "name": "An Honest Day's Work",
+          "condition": "An Honest Day's Work - Complete without causing a disturbance at the docks.",
+          "tip": "Easily done as causing a disturbance fails the mission."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "minisub": {
@@ -1985,6 +2604,25 @@
         "title": "Minisub",
         "url": "https://gta.fandom.com/wiki/Minisub",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 08:30.",
+          "tip": "Skip the cutscene and take the boat towards south Elysian Island and then go towards Pier 400 and stay close to the surface to avoid underwater obstacles."
+        },
+        {
+          "name": "No Boarding",
+          "condition": "No Boarding - Steal the Submersible without boarding the boat.",
+          "tip": "Snipe the cables from land and dive into the water to obtain the Submersible."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "cargobob": {
@@ -2032,6 +2670,20 @@
         "title": "Cargobob (mission)",
         "url": "https://gta.fandom.com/wiki/Cargobob_%28mission%29",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 05:30.",
+          "tip": "Once in the Cargobob, flee in the direction of Sandy Shores Airfield."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "the_merryweather_heist": {
@@ -2215,6 +2867,60 @@
         "title": "The Merryweather Heist",
         "url": "https://gta.fandom.com/wiki/The_Merryweather_Heist",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 12 enemies with a headshot",
+          "tip": ""
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 80%",
+          "tip": "Aim for the head with all enemies to achieve both."
+        },
+        {
+          "name": "Ninja",
+          "condition": "Ninja - Kill 12 enemies using stealth attacks",
+          "tip": "Stay in stealth mode while deploying the sticky bombs, and use the silenced Combat Pistol to shoot the guards. Kill all enemies as Franklin, as he is in stealth mode the whole time."
+        },
+        {
+          "name": "No Alarms",
+          "condition": "No Alarms - Get to the ship interior without being detected",
+          "tip": "Place sticky bombs on pillars rather than throwing them, and use the ladder after placing the first pillar. This stops guards hearing disturbances. Use the thermal scope on Franklin's sniper rifle to shoot all the guards before they can see Michael."
+        },
+        {
+          "name": "Container Hunter",
+          "condition": "Container Hunter - Find the container within 60 seconds",
+          "tip": "Drive the sub straight towards the wreckage. There will be a red flashing light on the device."
+        },
+        {
+          "name": "Salvager",
+          "condition": "Salvager - Find the container within 02:00",
+          "tip": "Stay as high as possible until almost level with the device, due to rocks on the ocean floor."
+        },
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 14:30",
+          "tip": "Skip cutscenes."
+        },
+        {
+          "name": "Show no Mercenary",
+          "condition": "Show no Mercenary - Eliminate all pursuing Merryweather enemies",
+          "tip": "Engage the pursuers, do not evade them."
+        },
+        {
+          "name": "Weathering the Storm",
+          "condition": "Weathering the Storm - Escape the pursuing Merryweather enemies in less than 4 minutes",
+          "tip": "Self explanatory; kill the guards as fast as possible. Killing them faster helps with the time objective."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "did_somebody_say_yoga": {
@@ -2301,6 +3007,35 @@
         "title": "Did Somebody Say Yoga?",
         "url": "https://gta.fandom.com/wiki/Did_Somebody_Say_Yoga%3F",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 15:00.",
+          "tip": "Skip cutscenes. During Michael's freefall hallucination scene, pitch downwards to rapidly descend to the ground."
+        },
+        {
+          "name": "Warrior",
+          "condition": "Warrior - Complete the first Yoga position without fault.",
+          "tip": ""
+        },
+        {
+          "name": "Triangle",
+          "condition": "Triangle - Complete the second Yoga position without fault.",
+          "tip": ""
+        },
+        {
+          "name": "Praise the Sun!",
+          "condition": "Praise the Sun! - Complete the third Yoga position without fault.",
+          "tip": "Hold onto the controls when doing poses."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "hood_safari": {
@@ -2412,6 +3147,30 @@
         "title": "Hood Safari",
         "url": "https://gta.fandom.com/wiki/Hood_Safari",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 07:00.",
+          "tip": "Skip all cutscenes and flee alone up the LS River."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 70%.",
+          "tip": "Kill enemies with headshots or a shotgun."
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 12 enemies with a headshot.",
+          "tip": "Shoot as many enemies with headshots, which also helps with accuracy."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "assassin_valet": {
@@ -2471,6 +3230,20 @@
         "title": "The Hotel Assassination",
         "url": "https://gta.fandom.com/wiki/The_Hotel_Assassination",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Sniper Boy",
+          "condition": "Sniper Boy - Kill the target using a Sniper Rifle",
+          "tip": "Wait until the checkout time arrives. Lowrey will enter from your right, and will be the only man not wearing a suit. Snipe him in the chest/neck/head, then get in their vehicle and leave the car park on the opposite side as the hotel. Use Franklin's ability to get out quickly without crashing. You can also snipe the target from the top floor and escape through the ramp. The mission will immediately be complete after landing in the street."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "blitz_play_intro": {
@@ -2492,6 +3265,14 @@
         "title": "Blitz Play Intro",
         "url": "https://gta.fandom.com/wiki/Blitz_Play_Intro",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "masks": {
@@ -2532,6 +3313,25 @@
         "title": "Masks",
         "url": "https://gta.fandom.com/wiki/Masks",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Face Time",
+          "condition": "Face Time - Purchase all masks within 20 seconds.",
+          "tip": "If this is the last one of the setup missions done, the mission will pass after the phone call, which also counts for the 20 seconds, so it may need to be skipped."
+        },
+        {
+          "name": "Cliché",
+          "condition": "Cliché - Purchase a white hockey mask for each character.",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "boiler_suits": {
@@ -2578,6 +3378,25 @@
         "title": "Boiler Suits",
         "url": "https://gta.fandom.com/wiki/Boiler_Suits",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Quick Shopper",
+          "condition": "Quick Shopper - Purchase all outfits within 30 seconds.",
+          "tip": ""
+        },
+        {
+          "name": "United Colors",
+          "condition": "United Colors - Purchase a different color for each character.",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "trash_truck": {
@@ -2641,6 +3460,30 @@
         "title": "Trash Truck",
         "url": "https://gta.fandom.com/wiki/Trash_Truck",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 5:00.",
+          "tip": ""
+        },
+        {
+          "name": "Undented",
+          "condition": "Undented - Deliver the Trashmaster with no damage.",
+          "tip": "The truck must be in perfect condition to earn this objective."
+        },
+        {
+          "name": "In The Dust",
+          "condition": "In The Dust - Reach top speed in the Trashmaster.",
+          "tip": "Easily achievable with Franklin's ability."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "tow_truck": {
@@ -2698,6 +3541,30 @@
         "title": "Tow Truck (mission)",
         "url": "https://gta.fandom.com/wiki/Tow_Truck_%28mission%29",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 3:00.",
+          "tip": ""
+        },
+        {
+          "name": "Not a Scratch",
+          "condition": "Not a Scratch - Deliver the Tow Truck with no damage.",
+          "tip": "Ensure the truck is in perfect condition - for some reason, this objective doesn't give the same leniency as in previous missions with the same requirement."
+        },
+        {
+          "name": "Truckin",
+          "condition": "Truckin - Reach top speed in the Tow Truck.",
+          "tip": "This is easily achieved with Franklin's ability."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "blitz_play": {
@@ -2826,6 +3693,35 @@
         "title": "Blitz Play",
         "url": "https://gta.fandom.com/wiki/Blitz_Play",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Hawk Down",
+          "condition": "Hawk Down - Shoot down the helicopter as Trevor.",
+          "tip": "Despite the description, the player can destroy the helicopter with any character (and not necessarily with an RPG)."
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 12 enemies with a headshot.",
+          "tip": "The player should aim for the head and use Michael because he has a Combat MG, and his special ability allows the player to slow down time and get precise shots on the cops."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 60%.",
+          "tip": "Bodyshots with a low damage weapon will allow more hits to be scored. Alternatively, using a shotgun will hit more easily due to its spread. Using Michael's special ability can help."
+        },
+        {
+          "name": "Switcher",
+          "condition": "Switcher - Switch character 10 times.",
+          "tip": "Switch as much as possible."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "i_fought_the_law": {
@@ -2911,6 +3807,40 @@
         "title": "I Fought the Law...",
         "url": "https://gta.fandom.com/wiki/I_Fought_the_Law...",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Tight Squeeze",
+          "condition": "Tight Squeeze - Race between the two trucks.",
+          "tip": "There are two trucks side by side just up from the start of the race. Drive the car between them."
+        },
+        {
+          "name": "Bus Passed",
+          "condition": "Bus Passed - Race between the two buses.",
+          "tip": "A Bus and a Dashound can be found side by side near the turn for the Los Santos Freeway. Like the trucks, drive between the two."
+        },
+        {
+          "name": "Follow the Leader",
+          "condition": "Follow the Leader - Follow Trevor through the tunnel.",
+          "tip": "One of the requisite cars will split from the pack and go into the Braddock Tunnel. Follow Trevor on the bike with Michael."
+        },
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 12:00.",
+          "tip": "Skip all cutscenes and go from checkpoint to checkpoint without stopping."
+        },
+        {
+          "name": "Split Seconds",
+          "condition": "Split Seconds - Use Franklin's special ability during the race.",
+          "tip": "Largely unnecessary, but can be used to go between the trucks or the buses, or just to avoid hitting any traffic."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "eye_in_the_sky": {
@@ -3028,6 +3958,30 @@
         "title": "Eye in the Sky",
         "url": "https://gta.fandom.com/wiki/Eye_in_the_Sky",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Not a Scratch",
+          "condition": "Not a Scratch - Deliver the Z-Type with no damage",
+          "tip": "Drive carefully to the airport. Be aware that cops will be alerted to the theft if Chad is left alive. Franklin's special ability can be used to help with this."
+        },
+        {
+          "name": "Eavesdropper",
+          "condition": "Eavesdropper - Listen to 3 conversations",
+          "tip": "Listen to as many conversations as possible."
+        },
+        {
+          "name": "I See You",
+          "condition": "I See You - Find Chad's hiding place on the 1st attempt",
+          "tip": "Chad is the leftmost person seen on the thermal camera."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "mr_richards": {
@@ -3114,6 +4068,35 @@
         "title": "Mr. Richards",
         "url": "https://gta.fandom.com/wiki/Mr._Richards",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 10:00.",
+          "tip": "Skip all cutscenes and fly directly towards the studio."
+        },
+        {
+          "name": "Silent Assassin",
+          "condition": "Silent Assassin - Kill 3 enemies using stealth attacks.",
+          "tip": "Can be easily done, because alerting the guards can fail the mission. Either melee kill them while in stealth mode or use a gun with a suppressor."
+        },
+        {
+          "name": "Can't Touch This 2.0",
+          "condition": "Can't Touch This 2.0 - Take no damage during the fight with Rocco.",
+          "tip": "Use the special ability as the player would in Complications."
+        },
+        {
+          "name": "Perfect Touchdown",
+          "condition": "Perfect Touchdown - Land the Frogger without damaging it.",
+          "tip": "Fly quickly to scare Anton & Milton."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "caida_libre": {
@@ -3164,6 +4147,35 @@
         "title": "Caida Libre",
         "url": "https://gta.fandom.com/wiki/Caida_Libre",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Floor It",
+          "condition": "Floor It - Reach top speed on the Sanchez.",
+          "tip": "Performing wheelies increases speed."
+        },
+        {
+          "name": "Glued to the Seat",
+          "condition": "Glued to the Seat - Don't fall off the Sanchez during the chase.",
+          "tip": "Self-explanatory. Note that even exiting the Sanchez on purpose will fail this objective."
+        },
+        {
+          "name": "One Two Three",
+          "condition": "One Two Three - Shoot down the plane with 3 shots only.",
+          "tip": "Using Michael's special ability for the first shot can help pass this achievement (for the two later shots it is unavailable)."
+        },
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete the mission in 9:45",
+          "tip": "Skip all cutscenes. The Fusilade{{Ref|name=fusilade|type=scriptdata|ref=Fusilade: iLocal_3958 = vehicle::create_vehicle(joaat(\"fusilade\"), 1404.827f, 1118.405f, 113.838f, 90.5742f, 1, 1);"
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "deep_inside": {
@@ -3219,6 +4231,40 @@
         "title": "Deep Inside",
         "url": "https://gta.fandom.com/wiki/Deep_Inside",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Not a Scratch",
+          "condition": "Not a Scratch - Deliver the JB 700 with minimal damage.",
+          "tip": "Use Franklin's special ability to have greater control of the vehicle."
+        },
+        {
+          "name": "Fastest Speed",
+          "condition": "Fastest Speed - Reach top speed in the JB 700.",
+          "tip": "Again, use Franklin's special ability, and/or take the car out on the freeway before delivering it (there is no time limit for this medal)."
+        },
+        {
+          "name": "Stealthy Recasting",
+          "condition": "Stealthy Recasting - Knock out the actor with a stealth attack.",
+          "tip": ""
+        },
+        {
+          "name": "Premature Ejector",
+          "condition": "Premature Ejector - Use the ejector seat within 10 seconds.",
+          "tip": "Press the Eject button as soon as the pop-up message appears."
+        },
+        {
+          "name": "Second Strike",
+          "condition": "Second Strike - Run over the actor with the JB 700.",
+          "tip": "Knock out the actor with a stealth attack, then take the JB 700 as usual. On the way out, the actor will be stumbling about in the road."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "minor_turbulence": {
@@ -3319,6 +4365,25 @@
         "title": "Minor Turbulence",
         "url": "https://gta.fandom.com/wiki/Minor_Turbulence",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 80%.",
+          "tip": "Using a shotgun will allow Trevor to land hits easily. Staying alive is also important, as being wasted will send the player back to a checkpoint, voiding the objective in the process. The tips below help: Approach the cargo plane from below, making it harder for the troops to shoot the cropduster. Once aboard, use Trevor's special ability. Have full armor. Be cautious around cargo. Mesas and boxes may slip out of position and hit Trevor causing death. Stay left, vaulting over cover, rather than going around to the right in the path of vehicles and debris."
+        },
+        {
+          "name": "Four Wheel Flier",
+          "condition": "Four Wheel Flier - Exit the cargo plane in the Mesa.",
+          "tip": "The player should exit the Mesa and parachute after jumping out of the plane, as the Mesa will explode during impact with the ground, killing the player if still inside. Note that the Mesa closest to the cockpit will not fall out the plane. The player should not attempt to save a Mesa from falling."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "paleto_score_setup": {
@@ -3431,6 +4496,25 @@
         "title": "Paleto Score Setup",
         "url": "https://gta.fandom.com/wiki/Paleto_Score_Setup",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Leisurely Drive",
+          "condition": "Leisurely Drive - Drive to the bank within 03:30.",
+          "tip": ""
+        },
+        {
+          "name": "Winner",
+          "condition": "Winner - Win the race back to the meth lab.",
+          "tip": "Trevor's Ruffian is faster than Michael's Premier."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "military_hardware": {
@@ -3501,6 +4585,25 @@
         "title": "Military Hardware",
         "url": "https://gta.fandom.com/wiki/Military_Hardware",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Head Hunter",
+          "condition": "Head Hunter - Kill 5 enemies with a headshot.",
+          "tip": "Make sure not to blow up both Crusaders as there will not be enough enemies alive to shoot."
+        },
+        {
+          "name": "Sticky Strategist",
+          "condition": "Sticky Strategist - Stop the convoy using a sticky bomb trap.",
+          "tip": "To achieve this objective, block the road with your vehicle ahead of the convoy, then set some Sticky Bombs down on the road in front of your vehicle. When the convoy approaches, set off the sticky bombs to destroy the first Crusader, then shoot the rest of the guards with your weapon before taking the Barracks as usual."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "predator": {
@@ -3599,6 +4702,35 @@
         "title": "Predator (mission)",
         "url": "https://gta.fandom.com/wiki/Predator_%28mission%29",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 9:00.",
+          "tip": "Skip the cutscenes. This achievement becomes easier if the mission is started with Franklin. After his call, change to him to start the mission."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 70%.",
+          "tip": "Make sure not to fire at the water, as it may decrease shooting accuracy."
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill three enemies with a headshot.",
+          "tip": "Use Michael's special ability."
+        },
+        {
+          "name": "Thin the Herd",
+          "condition": "Thin the Herd - Don't kill any animals.",
+          "tip": "Self explanatory; there will be several deer in the vicinity."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "the_paleto_score": {
@@ -3733,6 +4865,35 @@
         "title": "The Paleto Score",
         "url": "https://gta.fandom.com/wiki/The_Paleto_Score",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Let it Rain",
+          "condition": "Let it Rain - Fire over 4000 bullets.",
+          "tip": "Trevor's minigun is essential."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 50%.",
+          "tip": "Michael's special ability is useful, concentrate on body shots. Using a shotgun instead of the minigun can help with getting more precise shots."
+        },
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 16:00.",
+          "tip": "Skip cutscenes, consistently move 'forward'."
+        },
+        {
+          "name": "Collateral Damage",
+          "condition": "Collateral Damage - Cause $1,000,000 damage in Paleto Bay.",
+          "tip": "Destroy the gas station on the left when the player first leaves the bank - shoot a pump. Afterwards, keep shooting vehicles with Trevor's minigun to rack up more destruction."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "derailed": {
@@ -3826,6 +4987,30 @@
         "title": "Derailed",
         "url": "https://gta.fandom.com/wiki/Derailed",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 11:30",
+          "tip": "Skip all cutscenes."
+        },
+        {
+          "name": "Fastest Speed",
+          "condition": "Fastest Speed - Reach top speed on the Sanchez",
+          "tip": "Perform wheelies to increase speed."
+        },
+        {
+          "name": "Better than CJ",
+          "condition": "Better than CJ - Land on the train using the 1st jump.",
+          "tip": "Jump off the ramp at a low speed."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "monkey_business": {
@@ -3876,6 +5061,35 @@
         "title": "Monkey Business",
         "url": "https://gta.fandom.com/wiki/Monkey_Business",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Stunner",
+          "condition": "Stunner - Stun 8 enemies with the Stun Gun.",
+          "tip": "Self explanatory. However, the player will need to stun at least one of the armed guards after retrieving the neurotoxin. Knocking them down with a few gun shots before stunning them can reduce of risk of taking damage, since the Stun Gun has poor effective range."
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 15 enemies with a headshot.",
+          "tip": "Using a shotgun can help make this objective easier."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 70%.",
+          "tip": "Kill as many enemies with a headshot. This helps with the accuracy achievement. Low damage weapons such as pistols can also help improve accuracy by landing more hits."
+        },
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 13:30.",
+          "tip": "Skip all cutscenes."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "hang_ten": {
@@ -3911,6 +5125,20 @@
         "title": "Hang Ten",
         "url": "https://gta.fandom.com/wiki/Hang_Ten",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 04:00.",
+          "tip": "Skip all cutscenes, however the player can view both and beat the timer, dependant on their driving speed."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "surveying_the_score": {
@@ -3966,6 +5194,40 @@
         "title": "Surveying the Score",
         "url": "https://gta.fandom.com/wiki/Surveying_the_Score",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Perfect Distance",
+          "condition": "Perfect Distance - Follow the vans without being warned on distance.",
+          "tip": "Maintain sufficient altitude. Downward third person view angle can come in handy"
+        },
+        {
+          "name": "Cavity Search",
+          "condition": "Cavity Search - Find the construction hole within 20 seconds.",
+          "tip": "Directly east of the building (parking lot)."
+        },
+        {
+          "name": "Under the Bridge",
+          "condition": "Under the Bridge - Fly under the bridge whilst following the security vans.",
+          "tip": "Easiest route is flying under the drainage portion of the bridge in parallel with the road. Alternatively, if flying above the road, be careful not to collide with oncoming vehicles or the bridge."
+        },
+        {
+          "name": "Tunnel Flight",
+          "condition": "Tunnel Flight - Fly through the tunnel whilst following the security vans.",
+          "tip": "Same as above, avoid colliding with vehicles or the tunnel walls and roof. It might be worth practicing before doing the mission. It is preferable to fly in front of the trucks (with sufficient altitude) in order to buy time for stabilizing the helicopter in the direction of the tunnel prior to entry, wherein the player can primarily focus on forward tilting and altitude adjustments."
+        },
+        {
+          "name": "Mission Time",
+          "condition": "Mission Time - Complete within 11:00.",
+          "tip": "Skip the cutscenes."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "bury_the_hatchet": {
@@ -4011,6 +5273,30 @@
         "title": "Bury the Hatchet",
         "url": "https://gta.fandom.com/wiki/Bury_the_Hatchet",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 11:00.",
+          "tip": "Skip all cutscenes, and fly directly to the airfield at the end of the mission."
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 20 enemies with a headshot.",
+          "tip": "Michael's ability comes in handy."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 80%.",
+          "tip": "Self-explanatory. Michael's ability will definitely help get body shots more frequently. If possible, pick up another weapon, it will grant more accuracy than the supplied pistol and have more power. The Triad members spawn with a variety of weapons that can be taken and used, including the Assault Rifle, Pump Shotgun and Micro SMG."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "pack_man": {
@@ -4056,6 +5342,30 @@
         "title": "Pack Man",
         "url": "https://gta.fandom.com/wiki/Pack_Man",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 12:00",
+          "tip": "Skip all cutscenes, and start the mission with Franklin. When driving towards the drop-off point, drive on the eastern highway instead of the western one. This route is much faster. Cops will still appear, but they will be fewer in this case."
+        },
+        {
+          "name": "Not a Scratch",
+          "condition": "Not a Scratch - Complete with minimal damage to the JB 700",
+          "tip": "Keep a reasonable distance from the back of the Packer, or alongside the back of the packer. Driving alongside the packer can help prevent the JB 700 from being sandwiched between the speeding cop cars and the rear of the packer. This can also assist with spike aiming to blow out tires of the police chasing the rig."
+        },
+        {
+          "name": "Shredder",
+          "condition": "Shredder - Take out 3 cop cars using the spikes",
+          "tip": "Go up the Los Santos Freeway, as the chase will start by Bolingbroke Penitentiary. It will be on a straight road as opposed to the suggested route and the chase lasts longer, giving the player plenty of time. Driving alongside the Packer can help with aiming spike releases to blowout the tires of police cars."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "fresh_meat": {
@@ -4111,6 +5421,40 @@
         "title": "Fresh Meat (mission)",
         "url": "https://gta.fandom.com/wiki/Fresh_Meat_%28mission%29",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Switch Limiter",
+          "condition": "Switch Limiter - Don't switch more than 3 times",
+          "tip": "Control Franklin until he saves Michael, switch to Michael for the remainder of the shootout for his special ability, and switch to Franklin when leaving in the car for his special ability."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 70%",
+          "tip": "Use a shotgun for Franklin and Michael's special ability for Michael. This also helps for the headshot objective."
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 10 enemies with headshots",
+          "tip": "Use Michael's special ability. This also helps for the accuracy objective."
+        },
+        {
+          "name": "Swift Rescue",
+          "condition": "Swift Rescue - Rescue Michael within 3:30",
+          "tip": "Avoid crashing when driving to the meat factory and use the shotgun for the first shootout."
+        },
+        {
+          "name": "Sense of Direction",
+          "condition": "Sense of Direction - Don't use a map waypoint.",
+          "tip": "Use the Trackify app or the player's own knowledge of the map to get to the slaughterhouse."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "cleaning_out_the_bureau": {
@@ -4156,6 +5500,30 @@
         "title": "Cleaning out the Bureau",
         "url": "https://gta.fandom.com/wiki/Cleaning_out_the_Bureau",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Eagle Eye",
+          "condition": "Eagle Eye - Check all license plates.",
+          "tip": "Zoom in on all license plates whilst waiting for Harvey."
+        },
+        {
+          "name": "He Missed a Spot",
+          "condition": "He Missed a Spot - Follow the janitor without being spotted.",
+          "tip": "Stay at least two car lengths behind Harvey."
+        },
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 09:00.",
+          "tip": "Skip all cutscenes."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "architect_s_plans": {
@@ -4191,6 +5559,20 @@
         "title": "Architect's Plans",
         "url": "https://gta.fandom.com/wiki/Architect%27s_Plans",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Quick Getaway",
+          "condition": "Quick Getaway - Leave the construction site within 45 seconds.",
+          "tip": "Parachute from the roof after killing the architect. Kill him as soon as Franklin enters the site and take the architect's car. However, taking the car will grant the player a 3 star wanted level. The wanted level does not interfere with the gold medal."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "fire_truck": {
@@ -4231,6 +5613,25 @@
         "title": "Fire Truck (mission)",
         "url": "https://gta.fandom.com/wiki/Fire_Truck_%28mission%29",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "What is your Emergency?",
+          "condition": "What is your Emergency? - Call 911 to contact the fire department.",
+          "tip": ""
+        },
+        {
+          "name": "Not a Scratch",
+          "condition": "Not a Scratch - Deliver the Fire Truck with no damage.",
+          "tip": "Play the mission as Franklin and use his ability to avoid crashes"
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "reuniting_the_family": {
@@ -4266,6 +5667,20 @@
         "title": "Reuniting the Family",
         "url": "https://gta.fandom.com/wiki/Reuniting_the_Family",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 10:30",
+          "tip": "Skip all cutscenes."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "the_bureau_raid": {
@@ -4346,6 +5761,65 @@
         "title": "The Bureau Raid",
         "url": "https://gta.fandom.com/wiki/The_Bureau_Raid",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 18:00.",
+          "tip": "Skip all cutscenes and continuously complete the tasks."
+        },
+        {
+          "name": "Out of Breath",
+          "condition": "Out of Breath - Escape with 40% oxygen remaining",
+          "tip": "Keep moving Michael/Franklin while escaping and do not wait."
+        },
+        {
+          "name": "You Missed a Spot",
+          "condition": "You Missed a Spot - Complete the mopping section within 03:00",
+          "tip": "Focus on cleaning the spots marked on the map and quickly plant the bombs and leave."
+        },
+        {
+          "name": "Abseiler",
+          "condition": "Abseiler - Abseil down the elevator shaft within 30 seconds",
+          "tip": "Carefully avoid falling debris and move down."
+        },
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 19:00",
+          "tip": "When selecting the crew, pick an experienced driver as an inexperienced will add more time"
+        },
+        {
+          "name": "No Innocents",
+          "condition": "No Innocents - Don't kill any innocent civilians",
+          "tip": "Shoot only the attacking agents"
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 20 enemies with a headshot",
+          "tip": "Use a shotgun and Michael's ability for better accuracy."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 70%",
+          "tip": "Make headshots. Using a shotgun and Michael's ability can do this."
+        },
+        {
+          "name": "Perfect Drop",
+          "condition": "Perfect Drop - Land perfectly on the main section of the roof.",
+          "tip": "Have Michael fall freely for some time and use the parachute when Michael is close to the FIB building."
+        },
+        {
+          "name": "Hacker",
+          "condition": "Hacker - Hack the system within 45 seconds",
+          "tip": "Quickly follow the hacker's instructions or remember the steps and don't wait. Michael's ability can also be turned on right before entering the room, which will help with this objective."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "the_wrap_up": {
@@ -4391,6 +5865,30 @@
         "title": "The Wrap Up",
         "url": "https://gta.fandom.com/wiki/The_Wrap_Up",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 07:00",
+          "tip": ""
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 18 enemies with a headshot",
+          "tip": ""
+        },
+        {
+          "name": "Buzz Off!",
+          "condition": "Buzz Off! - Shoot down the pursuing helicopter",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "lamar_down": {
@@ -4441,6 +5939,35 @@
         "title": "Lamar Down",
         "url": "https://gta.fandom.com/wiki/Lamar_Down",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 18 enemies with a headshot",
+          "tip": "Kill as many enemies as possible. Michael's ability and hiding position makes him the perfect character to use for this achievement."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 70%",
+          "tip": "Use a shotgun on the ground or the method above to increase accuracy."
+        },
+        {
+          "name": "Three Way",
+          "condition": "Three Way - Kill an enemy with all 3 characters",
+          "tip": "Self explanatory."
+        },
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 13:30",
+          "tip": "All cutscenes should be skipped. The cutscene in which the trio scope out the sawmill can be skipped by attacking the Sawmill without going to the yellow marker. To gain time, the player can drive to the sawmill in Franklin's car and use the same shortcut Trevor used in Caida Libre. Once the player is near the The Lost trailer camp, they can go on the train tracks and drive until they are at the sawmill. They can drive back to Lamar's house by using the same train track shortcut. This will save at least 1 minute of time. The player can use Franklin's Bagger, but on the drive back, it will be slower due to the weight of both Franklin and Lamar."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "the_ballad_of_rocco": {
@@ -4494,6 +6021,20 @@
         "title": "The Ballad of Rocco",
         "url": "https://gta.fandom.com/wiki/The_Ballad_of_Rocco",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 03:00",
+          "tip": "After the opening cutscene finishes (whether skipped or not), Michael will spawn facing Rocco's car as it begins to drive away. Quickly use Michael's special ability and snipe Rocco. As he is in the driver's seat, Gianni will get out and can be killed. The final cutscene will start after both are dead. Using the homing launcher (DLC) or railgun (next-gen only) will also work."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "legal_trouble": {
@@ -4544,6 +6085,35 @@
         "title": "Legal Trouble",
         "url": "https://gta.fandom.com/wiki/Legal_Trouble",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 05:30.",
+          "tip": "Skip all cutscenes, and take the Shamal plane near the entrance of the hangar to escape quickly."
+        },
+        {
+          "name": "Floor It",
+          "condition": "Floor It - Reach top speed in any car.",
+          "tip": "This is self explanatory, just crash minimally. If the player can obtain a motorcycle, such as a Bati 801, this will also make this objective easier to achieve due to their ability to wheelie and achieve a top speed that is higher than the expected range."
+        },
+        {
+          "name": "Clean Escape",
+          "condition": "Clean Escape - Lose the wanted level within 02:00.",
+          "tip": "As stated before, use the Shamal near the entrance of the hangar and avoid police helicopters. Note that the Shamal takes time to fire up the engine - about 8 seconds are needed. Therefore, it is recommended to kill the officers who get too close to the jet before taking off, as they can deal quite some damage to the jet."
+        },
+        {
+          "name": "News Hound",
+          "condition": "News Hound - View the Weazel News camera for 15 seconds.",
+          "tip": "It is recommended that this is done whilst in the airport, as the player has more space to keep their vehicle from crashing."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "meltdown": {
@@ -4594,6 +6164,35 @@
         "title": "Meltdown (GTA V)",
         "url": "https://gta.fandom.com/wiki/Meltdown_%28GTA_V%29",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 6:30",
+          "tip": "Skip all cutscenes."
+        },
+        {
+          "name": "Pedal to the Metal",
+          "condition": "Pedal to the Metal - Reach top speed in any vehicle",
+          "tip": "Self explanatory. Reach top speed in the Vacca during the rush back to the house. It is recommended to use Spanish Avenue as opposed to Vinewood Boulevard and Eclipse Boulevard as there will be significantly less vehicle/foot traffic, allowing for easier travel and higher speeds."
+        },
+        {
+          "name": "Tier One Operator",
+          "condition": "Tier One Operator - Kill 12 enemies with a headshot",
+          "tip": "Kill as many enemies with headshots, Michael's ability can be used inside the house."
+        },
+        {
+          "name": "Headshot Rescue",
+          "condition": "Headshot Rescue - Rescue Amanda and Tracey with a headshot",
+          "tip": "Using the special ability will stop Michael accidentally killing them, or missing. The guards will shoot them if Michael misses."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "planning_the_big_score": {
@@ -4623,6 +6222,14 @@
         "title": "Planning the Big Score",
         "url": "https://gta.fandom.com/wiki/Planning_the_Big_Score",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_only"
       }
     },
     "stingers": {
@@ -4663,6 +6270,25 @@
         "title": "Stingers",
         "url": "https://gta.fandom.com/wiki/Stingers",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Escapee",
+          "condition": "Escapee - Steal the Police Transporter and escape within 02:00.",
+          "tip": "Use the LS River and escape the sewage tunnel in Mirror Park if needed. Entering by jumping over the wall and getting the van while in stealth mode will not alert the guards, avoiding any police chase and making this objective very easy. Alternatively, wearing the highway patrol outfit will act as a disguise to the guards, allowing for another easy escape (Michael and Trevor only) ."
+        },
+        {
+          "name": "Not a Scratch",
+          "condition": "Not a Scratch - Deliver the Police Transporter with no damage.",
+          "tip": "Avoid crashes when losing the police. Using one of the methods described above makes this objective very easy as well."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "gauntlet": {
@@ -4708,6 +6334,30 @@
         "title": "Gauntlet (mission)",
         "url": "https://gta.fandom.com/wiki/Gauntlet_%28mission%29",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Mapped",
+          "condition": "Mapped - Deliver the Gauntlet pictured in the email.",
+          "tip": "Use the car locations on the emails."
+        },
+        {
+          "name": "Not a Scratch",
+          "condition": "Not a Scratch - Deliver the Gauntlet with no damage.",
+          "tip": "Use the airport Los Santos Customs as it is the closest to the drop-off. Despite what the name of the objective suggests, the vehicle cannot take damage during any part of the drive, so even taking damage before repairing/modding the car will fail this objective, so be very careful during the drive to Los Santos Customs."
+        },
+        {
+          "name": "Pimped Out",
+          "condition": "Pimped Out - Spend $17000 modifying the Gauntlet.",
+          "tip": "Using the suggested mods costs $20000. Still achievable if Franklin uses the LSC shop near Sandy Shores after he has purchased it, even though all mods are free."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "driller": {
@@ -4748,6 +6398,25 @@
         "title": "Driller",
         "url": "https://gta.fandom.com/wiki/Driller",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Sneak Thief",
+          "condition": "Sneak Thief - Steal the Cutter without being detected",
+          "tip": ""
+        },
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 05:00",
+          "tip": "This requires a calculated approach. It is recommended to first prepare a sniper rifle with a suppressor. Get up onto the roof using the ramp directly south of the west entrance. From the vantage point, notice that one of the workers will be walking towards the building. You must wait for him to get a sufficient distance/out of sight from the other workers, then eliminate him. One by one, proceed to eliminate the workers starting from the east, working your way towards the middle. Save the workers along the southern edge of the lot, as well as the guard at the west entry, for last. Now, you will need to get back onto the ground to take care of the rest of the workers, making sure you are still a safe distance away from them. First eliminate the guard at the west entry, and save the two conversating workers for last (you must eliminate both of them at once)."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "sidetracked": {
@@ -4788,6 +6457,25 @@
         "title": "Sidetracked",
         "url": "https://gta.fandom.com/wiki/Sidetracked",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 04:30.",
+          "tip": "Use the sniper rifle to get rid of the guards, then use a vehicle to move around the quarry. Fly low in the chopper when retrieving the cars."
+        },
+        {
+          "name": "Undetected",
+          "condition": "Undetected - Steal the train without being detected.",
+          "tip": "Use a melee weapon, sniper rifle or suppressed weapon to incapacitate the guards."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "the_big_score": {
@@ -4853,6 +6541,50 @@
         "title": "The Big Score (GTA V)",
         "url": "https://gta.fandom.com/wiki/The_Big_Score_%28GTA_V%29",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 20 enemies with a headshot",
+          "tip": "Kill as many enemies with a headshot. This also helps with the accuracy achievement."
+        },
+        {
+          "name": "Signal Man",
+          "condition": "Signal Man - Perform less than 10 traffic light changes",
+          "tip": "Only stop the enemies close to the Securicars. Retries are counted towards the total."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 60%",
+          "tip": "Headshots or using a shotgun should help achieve this."
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 20 enemies with a headshot",
+          "tip": "Kill as many enemies as possible with headshots. This also helps with the accuracy achievement."
+        },
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 16:00",
+          "tip": "Skip all cutscenes."
+        },
+        {
+          "name": "Cha-Ching",
+          "condition": "Cha-Ching - Drop the gold onto the train within 30 seconds",
+          "tip": "Try to drop the gold on the train before it goes under the bridge at the quarry, or just after."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 60%",
+          "tip": "Headshots or using a shotgun should achieve this."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "something_sensible": {
@@ -4888,6 +6620,20 @@
         "title": "Something Sensible",
         "url": "https://gta.fandom.com/wiki/Something_Sensible",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Judas!",
+          "condition": "Judas! - Kill Trevor",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "the_time_s_come": {
@@ -4935,6 +6681,20 @@
         "title": "The Time's Come",
         "url": "https://gta.fandom.com/wiki/The_Time%27s_Come",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Surpassed the Mentor",
+          "condition": "Surpassed the Mentor - Kill Michael",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "the_third_way": {
@@ -5091,6 +6851,45 @@
         "title": "The Third Way",
         "url": "https://gta.fandom.com/wiki/The_Third_Way",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 21:30.",
+          "tip": "Skip the cutscenes to save time. A stealthy approach is not required during Trevor's visit to Weston's mansion. Simply take out the guards along the way and get to the objective. When the trio are killing the antagonists, let Michael kill first, then Trevor, then Franklin. If Trevor is the last to kill Haines, then he will need to drive all the way to Weston's mansion after evading the two-star wanted level, which could cost time if trying to achieve this gold medal."
+        },
+        {
+          "name": "Headshots",
+          "condition": "Headshots - Kill 20 enemies with a headshot.",
+          "tip": "It's advised to use the Pump Shotgun or Pistol to achieve this. Michael and Trevor's abilities can be useful."
+        },
+        {
+          "name": "Accuracy",
+          "condition": "Accuracy - Finish with a shooting accuracy of at least 70%.",
+          "tip": "Do the non-headshots with a low damage weapon or a Shotgun. Again, Michael's ability can be useful. You can enable auto-aim for better accuracy"
+        },
+        {
+          "name": "Stick, Tick... Boom!",
+          "condition": "Stick, Tick... Boom! - Kill Cheng with a Sticky Bomb.",
+          "tip": "Use Franklin's Special Ability to throw the Sticky Bomb. It's advised to only use one, and throw to second vehicle, as another two will explode and all enemies will die, saving time to achieve Time Gold Medal Objective."
+        },
+        {
+          "name": "Lead Lobotomy",
+          "condition": "Lead Lobotomy - Kill Steve Haines with a headshot.",
+          "tip": "Easy to achieve. Just use the Heavy Sniper to shoot him. If the player wants to save time as well as increased accuracy, stop at the bridge, jump to the trunk and shoot Haines, as the Ferris wheel will not move unless the player triggers the cutscene."
+        },
+        {
+          "name": "Stretched Out",
+          "condition": "Stretched Out - Kill Stretch with a melee attack.",
+          "tip": "Use the knife (machete or hatchet in the enhanced version) to kill Stretch."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "the_good_husband": {
@@ -5112,6 +6911,14 @@
         "title": "The Good Husband",
         "url": "https://gta.fandom.com/wiki/The_Good_Husband",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "doting_dad": {
@@ -5141,6 +6948,14 @@
         "title": "Doting Dad",
         "url": "https://gta.fandom.com/wiki/Doting_Dad",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_only"
       }
     },
     "parenting_101": {
@@ -5170,6 +6985,14 @@
         "title": "Parenting 101",
         "url": "https://gta.fandom.com/wiki/Parenting_101",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_only"
       }
     },
     "chaos": {
@@ -5191,6 +7014,14 @@
         "title": "Chaos",
         "url": "https://gta.fandom.com/wiki/Chaos",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "evil": {
@@ -5212,6 +7043,14 @@
         "title": "Evil",
         "url": "https://gta.fandom.com/wiki/Evil",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "negativity": {
@@ -5233,6 +7072,14 @@
         "title": "Negativity",
         "url": "https://gta.fandom.com/wiki/Negativity",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "fucked_up": {
@@ -5254,6 +7101,14 @@
         "title": "Fucked Up",
         "url": "https://gta.fandom.com/wiki/Fucked_Up",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "abandonment_issues": {
@@ -5275,6 +7130,14 @@
         "title": "Abandonment Issues",
         "url": "https://gta.fandom.com/wiki/Abandonment_Issues",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "the_multi_target_assassination": {
@@ -5330,6 +7193,40 @@
         "title": "The Multi Target Assassination",
         "url": "https://gta.fandom.com/wiki/The_Multi_Target_Assassination",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Speedy Killer",
+          "condition": "Speedy Killer - Kill all targets as quickly as possible.",
+          "tip": "Use any sniper rifle, a fast vehicle, and a homing launcher."
+        },
+        {
+          "name": "#Bodybuilder- Use a car and pull up to the gym (shoot at the target using Franklin's ability then quickly drive off up the beach not the road).",
+          "condition": "#Bodybuilder- Use a car and pull up to the gym (shoot at the target using Franklin's ability then quickly drive off up the beach not the road).",
+          "tip": ""
+        },
+        {
+          "name": "#Yacht- Follow the beach and when the player can get as close as possible to the boat and use a sniper rifle. There is a couple on the boat; the target is the male. Alternatively, use a Homing Launcher, fire and forget, then head to the next target.",
+          "condition": "#Yacht- Follow the beach and when the player can get as close as possible to the boat and use a sniper rifle. There is a couple on the boat; the target is the male. Alternatively, use a Homing Launcher, fire and forget, then head to the next target.",
+          "tip": ""
+        },
+        {
+          "name": "#Window Cleaning Platform- Drive below the platform, get out, snipe the target, and drive off.",
+          "condition": "#Window Cleaning Platform- Drive below the platform, get out, snipe the target, and drive off.",
+          "tip": ""
+        },
+        {
+          "name": "#Biker- Use the vehicle to dismount the biker and shoot him if needed and quickly leave the area. This will also prevent a wanted level, because shooting him may attract one.",
+          "condition": "#Biker- Use the vehicle to dismount the biker and shoot him if needed and quickly leave the area. This will also prevent a wanted level, because shooting him may attract one.",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "the_vice_assassination": {
@@ -5365,6 +7262,20 @@
         "title": "The Vice Assassination",
         "url": "https://gta.fandom.com/wiki/The_Vice_Assassination",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Clean Escape",
+          "condition": "Clean Escape - Complete without alerting the cops.",
+          "tip": "Leave the area immediately after assassinating the target"
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "assassin_bus": {
@@ -5417,7 +7328,21 @@
           "timing": "风险提示",
           "action": "股价与回升幅度会受游戏版本、存档进度及等待时间影响；先手动存档并观察市场，不保证固定收益。"
         }
-      ]
+      ],
+      "gold_medal_criteria": [
+        {
+          "name": "Hit and Run",
+          "condition": "Hit and Run - Kill the target using the bus.",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "sourced",
+        "summary_status": "walkthrough_and_gold"
+      }
     },
     "the_construction_assassination": {
       "script_id": null,
@@ -5452,6 +7377,20 @@
         "title": "The Construction Assassination",
         "url": "https://gta.fandom.com/wiki/The_Construction_Assassination",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "No Fly Zone",
+          "condition": "No Fly Zone - Shoot down the target's helicopter.",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "what_lies_beneath": {
@@ -5487,6 +7426,14 @@
         "title": "What Lies Beneath",
         "url": "https://gta.fandom.com/wiki/What_Lies_Beneath",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_only"
       }
     },
     "grass_roots_trevor": {
@@ -5508,6 +7455,14 @@
         "title": "Grass Roots",
         "url": "https://gta.fandom.com/wiki/Grass_Roots",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "grass_roots_franklin": {
@@ -5529,6 +7484,14 @@
         "title": "Grass Roots",
         "url": "https://gta.fandom.com/wiki/Grass_Roots",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "grass_roots_the_pickup": {
@@ -5550,6 +7513,14 @@
         "title": "Grass Roots",
         "url": "https://gta.fandom.com/wiki/Grass_Roots",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "grass_roots_the_drag": {
@@ -5571,6 +7542,14 @@
         "title": "Grass Roots",
         "url": "https://gta.fandom.com/wiki/Grass_Roots",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "grass_roots_the_smoke_in": {
@@ -5592,6 +7571,14 @@
         "title": "Grass Roots",
         "url": "https://gta.fandom.com/wiki/Grass_Roots",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "paparazzo_the_sex_tape": {
@@ -5650,6 +7637,25 @@
         "title": "Paparazzo - The Sex Tape",
         "url": "https://gta.fandom.com/wiki/Paparazzo_-_The_Sex_Tape",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Quick Dip: Jump in the pool whilst following Beverly.",
+          "condition": "Quick Dip: Jump in the pool whilst following Beverly.",
+          "tip": "Enter the pool in any way."
+        },
+        {
+          "name": "Money Shot: Achieve full facial recognition during chase.",
+          "condition": "Money Shot: Achieve full facial recognition during chase.",
+          "tip": "Make sure the square around her face is green."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "paparazzo_the_partnership": {
@@ -5671,6 +7677,14 @@
         "title": "Paparazzo - The Partnership",
         "url": "https://gta.fandom.com/wiki/Paparazzo_-_The_Partnership",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "paparazzo_the_meltdown": {
@@ -5717,6 +7731,25 @@
         "title": "Paparazzo - The Meltdown",
         "url": "https://gta.fandom.com/wiki/Paparazzo_-_The_Meltdown",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Thick of It",
+          "condition": "Thick of It - Stay close to Poppy throughout the chase.",
+          "tip": "The easiest way to lose her is to actually be too close to her, as she will often make sharp turns. Close to the end of the chase, she will get inside a fenced area. If Franklin does not take the same route, it will be very easy to lose her. Also, there is a chance to bump into the police car giving chase, failing the mission. As long as Poppy is on the screen during the chase, the objective will be completed at the end of the mission."
+        },
+        {
+          "name": "DUI Diva",
+          "condition": "DUI Diva - Snap Poppy after she's been cuffed.",
+          "tip": "Wait until the officer puts the handcuffs on Poppy and they start walking towards the police car in order to take the picture. Sometimes, taking the picture while she is being cuffed will not work."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "paparazzo_the_highness": {
@@ -5775,6 +7808,25 @@
         "title": "Paparazzo - The Highness",
         "url": "https://gta.fandom.com/wiki/Paparazzo_-_The_Highness",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Silent Snapper",
+          "condition": "Silent Snapper - Snap the princess without being detected.",
+          "tip": "Take the photo from the roof or from the left alleyway side of the market with a good distance."
+        },
+        {
+          "name": "Royal Drag",
+          "condition": "Royal Drag - Snap the princess buying the drugs.",
+          "tip": "Take the photo when the drug dealer gives the drugs to the guard."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "paparazzo_reality_check": {
@@ -5810,6 +7862,20 @@
         "title": "Paparazzo - Reality Check",
         "url": "https://gta.fandom.com/wiki/Paparazzo_-_Reality_Check",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Explosive Action!",
+          "condition": "Explosive Action! - Kill Beverly and his crew with one shot",
+          "tip": "Franklin should use any kind of explosive to get all of them at the same time. Be careful, as some explosives will give the targets enough time to run away from them, avoiding the blast radius. A rocket launcher, homing launcher, and/or sticky bomb will perform the task flawlessly."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "josef": {
@@ -5831,6 +7897,14 @@
         "title": "Josef",
         "url": "https://gta.fandom.com/wiki/Josef",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "an_american_welcome": {
@@ -5894,6 +7968,30 @@
         "title": "An American Welcome",
         "url": "https://gta.fandom.com/wiki/An_American_Welcome",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Downed",
+          "condition": "Downed - Stop the 1st immigrant within 30 seconds.",
+          "tip": "Taking a shortcut right at the start will let Trevor intercept the first immigrant fast."
+        },
+        {
+          "name": "Double Downed",
+          "condition": "Double Downed - Stop the 2nd group of immigrants within 55 seconds.",
+          "tip": "Driving to the back of the cement factory instead of the front will cut the chase short."
+        },
+        {
+          "name": "Shock and Awe",
+          "condition": "Shock and Awe - Use the stun gun to stop all immigrants.",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "minute_man_blues": {
@@ -5926,6 +8024,25 @@
         "title": "Minute Man Blues",
         "url": "https://gta.fandom.com/wiki/Minute_Man_Blues",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "What Goes Around...",
+          "condition": "What Goes Around... - Use the stun gun on Joe and Josef before killing them.",
+          "tip": "Easily done by stunning Josef as he's approached (even from a vehicle), and then as Joe escapes, shooting out his tires and then stunning him."
+        },
+        {
+          "name": "No Migration",
+          "condition": "No Migration - Kill Joe and Josef before they leave the farm.",
+          "tip": "Stealing Manuel's Bison before he gets in is a good idea, as this vehicle can be used to block the barn doors, preventing Joe's attempt to escape and allowing plenty of time for finishing both targets. Shoot the tires so that Joe will get out of his vehicle and start running."
+        }
+      ],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "gold_only"
       }
     },
     "fair_game": {
@@ -5958,6 +8075,25 @@
         "title": "Fair Game",
         "url": "https://gta.fandom.com/wiki/Fair_Game",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Downwind",
+          "condition": "Downwind - Don't get detected by any Elk.",
+          "tip": "Carefully watch the wind direction at all times."
+        },
+        {
+          "name": "Heart Hunter",
+          "condition": "Heart Hunter - Kill 3 elk with a heart shot.",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "gold_only"
       }
     },
     "liquidity_risk": {
@@ -6016,6 +8152,25 @@
         "title": "Liquidity Risk",
         "url": "https://gta.fandom.com/wiki/Liquidity_Risk",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Dive Bomber",
+          "condition": "Dive Bomber - Survive a water landing without opening the parachute",
+          "tip": "Do not get off the ATV at all; Franklin can survive crashing into the water but only while on the vehicle. Using Franklin's special ability just before landing will reduce damage taken, but isn't necessary. It is advised to carry full health and armor as there is a minor chance of killing Franklin upon landing on the water."
+        },
+        {
+          "name": "Sky Blazer",
+          "condition": "Sky Blazer - Perform 8 flips on the Blazer.",
+          "tip": "The player can perform more than 8 flips. Holding forward allows for quicker flips than backwards, and rolling sideways doesn't count."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "targeted_risk": {
@@ -6062,6 +8217,25 @@
         "title": "Targeted Risk",
         "url": "https://gta.fandom.com/wiki/Targeted_Risk",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Dare Devil",
+          "condition": "Dare Devil - Free fall for 8 seconds.",
+          "tip": "Use a stopwatch. While free falling, brake to increase air resistance, prolonging air time. Using a controller, move the stick forward only a fraction, to steer yourself ahead of the truck, then pull back (on PC, tap W repeatedly for about 2 seconds to go forward, then S to slow the falling for 1 second). This will allow Franklin to get ahead of the truck, which makes the parachuting part much easier."
+        },
+        {
+          "name": "Bullseye",
+          "condition": "Bullseye - Land on the Flatbed.",
+          "tip": "Once the parachute is open brake to slow the descent. Get ahead of the moving truck. Franklin needs to land standing."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "uncalculated_risk": {
@@ -6109,6 +8283,20 @@
         "title": "Uncalculated Risk",
         "url": "https://gta.fandom.com/wiki/Uncalculated_Risk",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Leap of Faith",
+          "condition": "Leap of Faith - Also jump from the Land Act Dam and land.",
+          "tip": "As the fence Dom jumped from is too high for Franklin to climb, the best way to perform the jump is for the player to head for the stairs immediately to the left of the fence, then jump over the railings there."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "accepting_the_truth": {
@@ -6130,6 +8318,14 @@
         "title": "Accepting the Truth",
         "url": "https://gta.fandom.com/wiki/Accepting_the_Truth",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "assuming_the_truth": {
@@ -6151,6 +8347,14 @@
         "title": "Assuming the Truth",
         "url": "https://gta.fandom.com/wiki/Assuming_the_Truth",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "chasing_the_truth": {
@@ -6178,6 +8382,20 @@
         "title": "Chasing the Truth",
         "url": "https://gta.fandom.com/wiki/Chasing_the_Truth",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Use the Force",
+          "condition": "Use the Force - Find the object without using the detector.",
+          "tip": "This objective refers to not pressing the bound key/mouse/button to use the detector, but as Michael will be holding the detector while moving around, placing the camera appropriately allows the player to see the detector's screen. Avoid using first person view as this automatically makes Michael use the detector and fail the requirement."
+        }
+      ],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "gold_only"
       }
     },
     "bearing_the_truth": {
@@ -6199,6 +8417,14 @@
         "title": "Bearing the Truth",
         "url": "https://gta.fandom.com/wiki/Bearing_the_Truth",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "delivering_the_truth": {
@@ -6263,6 +8489,25 @@
         "title": "Delivering the Truth",
         "url": "https://gta.fandom.com/wiki/Delivering_the_Truth",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Touchdown",
+          "condition": "Touchdown - Land the Velum without damaging it.",
+          "tip": "This should not be hard if the player is good at flying."
+        },
+        {
+          "name": "Zondar the Bridge",
+          "condition": "Zondar the Bridge - Fly under a bridge along Lago Zancudo.",
+          "tip": "Choose a bridge that the plane can pass."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "exercising_the_truth": {
@@ -6284,6 +8529,14 @@
         "title": "Exercising the Truth",
         "url": "https://gta.fandom.com/wiki/Exercising_the_Truth",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "unknowing_the_truth": {
@@ -6360,6 +8613,25 @@
         "title": "Unknowing the Truth",
         "url": "https://gta.fandom.com/wiki/Unknowing_the_Truth",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Cult Intervention",
+          "condition": "Cult Intervention - Kill all Epsilon security.",
+          "tip": ""
+        },
+        {
+          "name": "Show me the Money",
+          "condition": "Show me the Money - Steal the Epsilon money and escape.",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "closing_the_deal": {
@@ -6418,6 +8690,25 @@
         "title": "Closing the Deal",
         "url": "https://gta.fandom.com/wiki/Closing_the_Deal",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Pulverizer",
+          "condition": "Pulverizer - Use a melee weapon to beat up Avery.",
+          "tip": "One melee strike is enough to fulfill this objective; any more strikes will kill him. Knuckle Dusters do not count towards this objective."
+        },
+        {
+          "name": "Seized",
+          "condition": "Seized - Stop Avery's car within 40 seconds.",
+          "tip": "Using a submachine gun to perform a drive-by on Avery's vehicle is a better alternative to ramming him, and will quickly force him to pull over and exit."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "surreal_estate": {
@@ -6488,6 +8779,25 @@
         "title": "Surreal Estate",
         "url": "https://gta.fandom.com/wiki/Surreal_Estate",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Out of the Frying Pan",
+          "condition": "Out of the Frying Pan - Complete without alerting the cops.",
+          "tip": "Leave the area immediately after shooting the gasoline trail."
+        },
+        {
+          "name": "Pyromaniac",
+          "condition": "Pyromaniac - Pour the gasoline trail perfectly in one go.",
+          "tip": "Self-explanatory. Do not stop pouring gasoline at any point and make sure not to miss a single spot"
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "breach_of_contract": {
@@ -6528,6 +8838,25 @@
         "title": "Breach of Contract",
         "url": "https://gta.fandom.com/wiki/Breach_of_Contract",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Dirty Rat",
+          "condition": "Dirty Rat - Kill Josh.",
+          "tip": ""
+        },
+        {
+          "name": "Hot Pursuit",
+          "condition": "Hot Pursuit - Escape in the Police Interceptor.",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "exercising_demons_franklin": {
@@ -6549,6 +8878,14 @@
         "title": "Exercising Demons",
         "url": "https://gta.fandom.com/wiki/Exercising_Demons",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "exercising_demons_trevor": {
@@ -6570,6 +8907,14 @@
         "title": "Exercising Demons",
         "url": "https://gta.fandom.com/wiki/Exercising_Demons",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "damaged_goods": {
@@ -6659,6 +9004,14 @@
         "title": "Mrs. Philips (mission)",
         "url": "https://gta.fandom.com/wiki/Mrs._Philips_%28mission%29",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_only"
       }
     },
     "vinewood_souvenirs_willie": {
@@ -6729,6 +9082,25 @@
         "title": "Vinewood Souvenirs - Willie",
         "url": "https://gta.fandom.com/wiki/Vinewood_Souvenirs_-_Willie",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Fist Fury",
+          "condition": "Fist Fury - Take no damage during the fight with Willie.",
+          "tip": "Kick him instantly to make him fall to the ground, then repeatedly attack him to prevent him from getting up."
+        },
+        {
+          "name": "Entourage",
+          "condition": "Entourage - Talk to the entourage.",
+          "tip": "The room is on the left. Enter it before going downstairs."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "vinewood_souvenirs_tyler": {
@@ -6787,6 +9159,25 @@
         "title": "Vinewood Souvenirs - Tyler",
         "url": "https://gta.fandom.com/wiki/Vinewood_Souvenirs_-_Tyler",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Weed Killer",
+          "condition": "Weed Killer - Take out the Gardener with a stealth attack.",
+          "tip": "Note that silenced weapons are counted as stealth attacks."
+        },
+        {
+          "name": "Pilferer",
+          "condition": "Pilferer - Steal the clothes without being detected.",
+          "tip": "It is a good idea to go to the back of the house where the two side doors are. Trevor can then jump the fence to the right, using cover to stick to the wall near the pool. From there, Tyler can be seen swimming back and forth, while his companion is inside a hot tub with her back to the clothes. Once Tyler ends his swimming session, he will get out of the pool and start talking to himself. That is the time when Trevor must run to the clothes, grab them and run back immediately. If done correctly, he will not be spotted by Tyler. Note that after Tyler gets in the hot tub he will be facing the clothes, making it impossible to complete this objective."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "vinewood_souvenirs_kerry": {
@@ -6840,6 +9231,20 @@
         "title": "Vinewood Souvenirs - Kerry",
         "url": "https://gta.fandom.com/wiki/Vinewood_Souvenirs_-_Kerry",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Hot on the Paws",
+          "condition": "Hot on the Paws - Stay close to Dexie throughout the chase.",
+          "tip": "Make sure to keep Dexie within the view of the camera at all times."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "vinewood_souvenirs_mark": {
@@ -6897,6 +9302,30 @@
         "title": "Vinewood Souvenirs - Mark",
         "url": "https://gta.fandom.com/wiki/Vinewood_Souvenirs_-_Mark",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Under Par",
+          "condition": "Under Par - Collect the golf club in less than 30 seconds.",
+          "tip": "The timer to collect the golf club only starts counting down once Mark has been killed, so take the time to get in position and line up a headshot with a sniper rifle, then quickly run in, kill his 3 guards, and pick up the golf club."
+        },
+        {
+          "name": "Hole in One",
+          "condition": "Hole in One - Kill Fostenburg with a headshot.",
+          "tip": "Use a Sniper Rifle."
+        },
+        {
+          "name": "Four!",
+          "condition": "Four! - Kill Fostenburg and his three security guards.",
+          "tip": "Kill Fostenburg first, then kill the rest of the security guards second."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "vinewood_souvenirs_al_di_napoli": {
@@ -6960,6 +9389,30 @@
         "title": "Vinewood Souvenirs - Al Di Napoli",
         "url": "https://gta.fandom.com/wiki/Vinewood_Souvenirs_-_Al_Di_Napoli",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Stalker",
+          "condition": "Stalker - Stay close to Di Napoli.",
+          "tip": "Keeping Di Napoli within the view of the camera (which has a leeway of 180 degrees) should make achieving this objective possible. Using the third-person camera is recommended as Trevor may have to perform a U-turn to keep Di Napoli in sight after getting in Nigel's car, which is difficult to execute properly using the first-person camera."
+        },
+        {
+          "name": "Accident and Emergency",
+          "condition": "Accident and Emergency - Avoid hitting anyone inside the hospital.",
+          "tip": "Slow down when entering in the hospital to avoid hitting people."
+        },
+        {
+          "name": "Not a Scratch",
+          "condition": "Not a Scratch - Complete with minimal damage to Nigel's car.",
+          "tip": "Hitting the wall at the end of the chase does not void this objective."
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "vinewood_souvenirs_the_last_act": {
@@ -7018,6 +9471,25 @@
         "title": "Vinewood Souvenirs - The Last Act",
         "url": "https://gta.fandom.com/wiki/Vinewood_Souvenirs_-_The_Last_Act",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Skin of your Teeth Exit the car just before the train hits.",
+          "condition": "Skin of your Teeth Exit the car just before the train hits.",
+          "tip": "Drive the car towards the train and dive out before it hits (give a couple of seconds for Trevor to open the door)."
+        },
+        {
+          "name": "Locomotivation Kill Al Di Napoli using the train.",
+          "condition": "Locomotivation Kill Al Di Napoli using the train.",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "the_final_frontier": {
@@ -7039,6 +9511,14 @@
         "title": "The Final Frontier",
         "url": "https://gta.fandom.com/wiki/The_Final_Frontier",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     },
     "pulling_another_favor": {
@@ -7097,6 +9577,25 @@
         "title": "Pulling Another Favor",
         "url": "https://gta.fandom.com/wiki/Pulling_Another_Favor",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 05:30",
+          "tip": ""
+        },
+        {
+          "name": "Unhook Bonus",
+          "condition": "Unhook Bonus - Keep the vehicle hooked until delivery",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "pulling_favors_again": {
@@ -7173,6 +9672,25 @@
         "title": "Pulling Favors Again",
         "url": "https://gta.fandom.com/wiki/Pulling_Favors_Again",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 07:00",
+          "tip": ""
+        },
+        {
+          "name": "Unhook Bonus",
+          "condition": "Unhook Bonus - Keep the vehicle hooked until delivery",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "still_pulling_favors": {
@@ -7243,6 +9761,25 @@
         "title": "Still Pulling Favors",
         "url": "https://gta.fandom.com/wiki/Still_Pulling_Favors",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 06:00",
+          "tip": ""
+        },
+        {
+          "name": "Unhook Bonus",
+          "condition": "Unhook Bonus - Keep the vehicle hooked until delivery",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "pulling_one_last_favor": {
@@ -7307,6 +9844,25 @@
         "title": "Pulling One Last Favor",
         "url": "https://gta.fandom.com/wiki/Pulling_One_Last_Favor",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [
+        {
+          "name": "Time",
+          "condition": "Time - Complete within 05:00",
+          "tip": ""
+        },
+        {
+          "name": "Unhook Bonus",
+          "condition": "Unhook Bonus - Keep the vehicle hooked until delivery",
+          "tip": ""
+        }
+      ],
+      "data_completeness": {
+        "steps": "sourced",
+        "gold_medal_criteria": "sourced",
+        "gold_medal_applicability": "listed",
+        "tips": "not_compiled",
+        "summary_status": "walkthrough_and_gold"
       }
     },
     "magenta": {
@@ -7328,6 +9884,14 @@
         "title": "Magenta",
         "url": "https://gta.fandom.com/wiki/Magenta",
         "license": "CC BY-SA"
+      },
+      "gold_medal_criteria": [],
+      "data_completeness": {
+        "steps": "missing_source_detail",
+        "gold_medal_criteria": "not_listed_on_source",
+        "gold_medal_applicability": "unknown_from_source",
+        "tips": "not_compiled",
+        "summary_status": "catalog_only"
       }
     }
   }

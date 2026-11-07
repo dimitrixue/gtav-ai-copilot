@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T08:58:17Z",
+  "generated_at": "2026-11-07T14:28:08Z",
   "sources": [
     {
       "repository": "GTA Wiki",
@@ -57,10 +57,10 @@
       "Under the Bridge": 50
     },
     "mission_script_filenames": 1106,
-    "mission_catalog": {
-      "story_missions": 73,
-      "side_missions": 55,
-      "strangers_and_freaks": 43
+    "world_pois": {
+      "upstream_native_points": 1378,
+      "engine_blips": 0,
+      "total": 1378
     }
   },
   "policy": "The source list may include unlicensed repositories. Do not redistribute their payloads without checking their current license terms."

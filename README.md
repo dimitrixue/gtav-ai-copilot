@@ -2,7 +2,7 @@
 
 双人协作的 GTA V Legacy 遥测攻略助手，包含 SHVDN 遥测脚本、任务知识库检索、桌面悬浮窗与 DeepSeek 多模态流式请求。
 
-知识库来自可追溯的 Wiki 与 GitHub 数据源。重建方式、许可状态、坐标系及目前覆盖差距见 [数据来源说明](docs/DATA_SOURCES.md)；运行 `py scripts\build_full_kb.py` 可更新索引和任务资料。
+知识库来自可追溯的 Wiki 与 GitHub 数据源。重建方式、许可状态、坐标系及目前覆盖差距见 [数据来源说明](docs/DATA_SOURCES.md)；运行 `py scripts\build_full_kb.py` 可更新索引、原生坐标 POI 和任务资料。启动游戏加载遥测脚本后再次运行，可合并引擎 Blip 导出。
 
 ## 快速启动
 

@@ -250,6 +250,20 @@ def preserve_curated_fields(key: str, record: dict[str, Any], old_record: dict[s
             ]
 
 
+def apply_schema_contract(record: dict[str, Any]) -> None:
+    record["gold_medal_criteria"] = record.get("gold_medal_requirements", [])
+    guide_status = record.get("guide_status", "catalog_only")
+    has_steps = bool(record.get("steps"))
+    has_gold = bool(record.get("gold_medal_criteria"))
+    record["data_completeness"] = {
+        "steps": "sourced" if has_steps else "missing_source_detail",
+        "gold_medal_criteria": "sourced" if has_gold else "not_listed_on_source",
+        "gold_medal_applicability": "listed" if has_gold else "unknown_from_source",
+        "tips": "sourced" if record.get("key_tips") else "not_compiled",
+        "summary_status": guide_status,
+    }
+
+
 def fetch_mission_record(item: dict[str, str]) -> dict[str, Any]:
     try:
         text = fetch_wikitext(item["wiki_title"])
@@ -311,6 +325,7 @@ def build(output: Path = KB_PATH, workers: int = 5) -> dict[str, Any]:
         if record.get("kind") == "story":
             record["mission_number"] = story_order[record["title_en"]]
         preserve_curated_fields(key, record, old_record)
+        apply_schema_contract(record)
         missions[key] = record
 
     for key, old_record in old.items():
@@ -352,6 +367,7 @@ def main() -> int:
         for values in grouped.values():
             key, record = next(((key, record) for key, record in values if key == record.get("catalog_key")), values[0])
             preserve_curated_fields(key, record)
+            apply_schema_contract(record)
             compact[key] = record
         current["missions"] = compact
         args.output.write_text(json.dumps(current, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

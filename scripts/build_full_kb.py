@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any
 
 from generate_missions_kb import build as build_missions
+from build_world_pois import build as build_world_pois
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -149,6 +150,8 @@ def main() -> int:
         "collectibles_map_by_type": build_collectibles_map(danharper),
         "mission_script_filenames": build_script_catalog(decompiled),
     }
+    world_pois = build_world_pois(Path(__import__("tempfile").gettempdir()) / "gtav_engine_static_pois.json")
+    output_counts["world_pois"] = world_pois["counts"]
     if not args.skip_missions:
         missions = build_missions(workers=max(1, min(args.workers, 10)))
         output_counts["mission_catalog"] = missions["source_counts"]
