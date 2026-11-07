@@ -1,0 +1,32 @@
+# Local credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+
+# Large game binaries and local backups
+version_backup/
+**/version_backup/
+*.exe
+*.dll
+*.asi
+*.rpf
+*.pak
+*.7z
+*.zip
+
+# Python and editor output
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+
+# Temporary files and local runtime state
+*.tmp
+*.temp
+*.log
+*.bak
+*.orig
+.DS_Store
+Thumbs.db

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "language": "zh-CN",
+  "missions": {
+    "family4": {
+      "name": "出名或出丑 / Fame or Shame",
+      "characters": ["Michael", "Trevor"],
+      "steps": [
+        {"stage": 1, "title": "前往花园银行体育场", "action": "驾驶麦克的轿车前往 Maze Bank Arena；跟随 GPS 路线。"},
+        {"stage": 2, "title": "观看选秀", "action": "进入体育场并观看崔西参加的选秀过场动画。"},
+        {"stage": 3, "title": "追逐拉兹洛", "action": "驾驶魅影（Phantom）重型卡车追逐拉兹洛的红色帝乐洁（Dilettante），保持接近并跟随路线。"}
+      ],
+      "gold_medal_requirements": [
+        {"name": "最快圈速", "condition": "追逐阶段驾驶魅影达到最高车速。", "tip": "直路上持续加速，避免碰撞和急转。"},
+        {"name": "紧追不舍", "condition": "追逐期间与拉兹洛保持足够近的距离。", "tip": "盯住目标车，不要因撞车或绕路拉开距离。"},
+        {"name": "电源拔除", "condition": "追车前打断或撞断体育场外绿色事件厢型车的电源线。", "tip": "离开体育场时留意绿色厢型车及其电线；此项容易错过。"},
+        {"name": "禁止泊车", "condition": "拖着后方货柜完成追逐，不要脱钩。", "tip": "避免按住 H 键，以免脱钩。"}
+      ],
+      "key_tips": ["离开体育场前完成可选的电源线目标。", "追逐时控制转向，避免损坏拖车货柜。", "金牌计时与条件以游戏内任务清单为准。"]
+    },
+    "armenian1": {
+      "name": "富兰克林与拉玛 / Franklin and Lamar",
+      "characters": ["Franklin", "Lamar"],
+      "steps": [
+        {"stage": 1, "title": "接上拉玛", "action": "按 GPS 驾车接上拉玛，再前往汽车销售点。"},
+        {"stage": 2, "title": "开走车辆", "action": "按任务提示进入并开走指定的两辆敞篷车。"},
+        {"stage": 3, "title": "甩开警察", "action": "沿路线离开追捕区域，躲避警车并等待通缉等级消失。"},
+        {"stage": 4, "title": "送车并返回", "action": "把车辆送到指定地点，再按任务提示返回。"}
+      ],
+      "gold_medal_requirements": [
+        {"name": "Mission Time", "condition": "在 10 分 30 秒内完成任务。"},
+        {"name": "Can't Touch This", "condition": "在追逐中保持指定车辆完好；尽量避免碰撞。"},
+        {"name": "挑衅者", "condition": "在追逐时完成规定次数的挑衅动作。", "tip": "仅在安全路段按任务提示操作，避免影响驾驶。"},
+        {"name": "赢家", "condition": "在任务结尾的竞速中获胜。"}
+      ],
+      "key_tips": ["金牌挑战的具体计数以任务重玩菜单显示为准。", "追逐时优先稳定驾驶并留意屏幕提示。"]
+    },
+    "jewelry_heist": {
+      "name": "珠光宝气 / The Jewel Store Job",
+      "characters": ["Michael", "Franklin"],
+      "steps": [
+        {"stage": 1, "title": "进入珠宝店", "action": "按方案潜入店内并控制店员。"},
+        {"stage": 2, "title": "收集珠宝", "action": "快速砸碎展示柜并收集珠宝，留意队友和倒计时提示。"},
+        {"stage": 3, "title": "骑车撤离", "action": "骑摩托跟随队友穿过下水道，保持队形并避开障碍。"},
+        {"stage": 4, "title": "交付赃物", "action": "跟随导航抵达交付地点，完成任务。"}
+      ],
+      "gold_medal_requirements": [
+        {"name": "精准", "condition": "在珠宝店内完成指定数量的爆头。"},
+        {"name": "快速抓取", "condition": "在规定时间内收集完珠宝。"},
+        {"name": "保护赃物", "condition": "撤离途中避免损失珠宝。"},
+        {"name": "快速完成", "condition": "在规定总时限内完成任务。"}
+      ],
+      "key_tips": ["采用暴力方案时，进入前先确认枪械与弹药。", "下水道骑行保持间距，避免撞车导致赃物损失。"]
+    },
+    "trevor1": {
+      "name": "菲利普先生 / Mr. Philips",
+      "characters": ["Trevor"],
+      "steps": [
+        {"stage": 1, "title": "会合并出发", "action": "驾驶前往目标地点，触发与帮派成员的冲突。"},
+        {"stage": 2, "title": "追击敌人", "action": "驾车追踪逃跑的敌人，跟随道路并避免让目标消失。"},
+        {"stage": 3, "title": "清理营地", "action": "抵达营地后按提示消灭敌对人员，利用掩体并处理剩余目标。"},
+        {"stage": 4, "title": "寻找并处理目标", "action": "进入指定房屋找到目标，按任务提示完成处置。"},
+        {"stage": 5, "title": "返回拖车", "action": "驾驶回拖车处并完成剧情。"}
+      ],
+      "gold_medal_requirements": [
+        {"name": "无伤", "condition": "完成任务且不损失生命值。"},
+        {"name": "爆头", "condition": "达到任务要求的爆头数。"},
+        {"name": "时间", "condition": "在规定时间内完成任务。"},
+        {"name": "车轮离地", "condition": "完成任务要求的腾空/特技动作。"}
+      ],
+      "key_tips": ["先用掩体清理营地敌人，再推进目标位置。", "该任务的金牌计数以游戏内清单为准。"]
+    },
+    "assassin_bus": {
+      "name": "巴士暗杀 / The Bus Assassination",
+      "characters": ["Franklin"],
+      "steps": [
+        {"stage": 1, "title": "准备巴士", "action": "前往巴士站并按提示取得巴士。"},
+        {"stage": 2, "title": "执行暗杀", "action": "驾驶巴士到指定地点，辨认目标后按任务提示完成暗杀。"},
+        {"stage": 3, "title": "脱离现场", "action": "离开现场并甩掉警方，直到通缉等级消失。"}
+      ],
+      "gold_medal_requirements": [
+        {"name": "时间", "condition": "在任务重玩菜单显示的时限内完成。"},
+        {"name": "任务目标", "condition": "按游戏内挑战列表完成暗杀与撤离要求。"}
+      ],
+      "stock_guide": [
+        {"timing": "任务前", "action": "不要为本任务提前买入 Vapid（VAP）股票。"},
+        {"timing": "任务后", "action": "任务完成后观察 Vapid 股价下跌，在低位分批买入；等待价格回升后卖出。"},
+        {"timing": "风险提示", "action": "股价与回升幅度会受游戏版本、存档进度及等待时间影响；先手动存档并观察市场，不保证固定收益。"}
+      ],
+      "key_tips": ["巴士暗杀的常见投资时机是任务后买入 Vapid，勿与其他莱斯特暗杀任务混淆。", "金牌条件以游戏内任务清单为准。"]
+    }
+  }
+}
