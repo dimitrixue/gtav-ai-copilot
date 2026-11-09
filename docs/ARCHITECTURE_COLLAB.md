@@ -25,7 +25,7 @@ def get_tactical_context(telemetry: dict) -> dict:
 
 ## 成员 B：客户端、遥测与推理
 
-B 负责 `GTAVTelemetryServer.cs` 输出结构、截图/遥测采集、右上角置顶悬浮窗、Alt+Q 全局快捷键和 DeepSeek 流式多模态请求。客户端通过 `get_tactical_context(telemetry)` 取得攻略上下文，不直接依赖 A 的数据库实现。
+B 负责 `GTAVTelemetryServer.cs` 输出结构、截图/遥测采集、右上角置顶悬浮窗、游戏前台的小键盘 `Num 1` 快捷键和 DeepSeek 流式多模态请求。客户端通过 `get_tactical_context(telemetry)` 取得攻略上下文，不直接依赖 A 的数据库实现。
 
 遥测文件写入 `%TEMP%\gtav_ai_telemetry.json`，UTF-8 JSON，`timestamp` 为 Unix 毫秒。当前字段包括 `protagonist`、`is_mission_active`、`active_mission_script`、`location`、`player_status`、`active_objectives`。字段新增保持兼容；坐标使用 GTA 世界坐标，无法识别时使用显式空值/未知值。
 

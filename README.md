@@ -15,7 +15,7 @@
 ## 双人分工
 
 - **成员 A：知识库与数据检索工程师，只改 `data_kb/`。** 负责 69 个主线、58 个支线任务及股票暗杀攻略的数据扩充，构建 SQLite/LightRAG，并维护 `get_tactical_context(telemetry: dict) -> dict`。
-- **成员 B：客户端、遥测与大模型工程师，只改 `copilot_app/` 和 `gtav-telemetry-mod/`。** 负责 C# 遥测、截图、悬浮窗、Alt+Q 快捷键及 `deepseek-flash` 多模态流式 API。
+- **成员 B：客户端、遥测与大模型工程师，只改 `copilot_app/` 和 `gtav-telemetry-mod/`。** 负责 C# 遥测、截图、悬浮窗、小键盘 `Num 1` 快捷键及 `deepseek-flash` 多模态流式 API。
 - 文档和依赖等公共文件由提出改动的一方维护；跨目录接口变更通过 PR 先确认契约。细节见 [双人协作契约](docs/ARCHITECTURE_COLLAB.md)。
 
 知识库目前包含少量联调样例，覆盖目标需由成员 A 按来源逐步补齐。`.env`、游戏二进制、下载包和 `version_backup/` 不提交。仓库设为 Private 后，可在 **Settings → Collaborators → Add people** 邀请队友。

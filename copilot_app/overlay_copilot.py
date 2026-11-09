@@ -10,9 +10,15 @@ import queue
 import threading
 import time
 import urllib.error
-import urllib.request
 from pathlib import Path
 from tkinter import BOTH, END, LEFT, RIGHT, X, Y, Button, Frame, Label, Text, Tk
+
+if __package__:
+    from .capture_and_telemetry import read_telemetry, telemetry_path
+    from .deepseek_client import stream_multimodal
+else:
+    from capture_and_telemetry import read_telemetry, telemetry_path
+    from deepseek_client import stream_multimodal
 
 try:
     from PIL import Image
@@ -26,13 +32,71 @@ except ImportError:
 
 
 ROOT = Path(__file__).resolve().parent
-TELEMETRY_PATH = Path(os.environ.get("TEMP", Path.home() / "AppData/Local/Temp")) / "gtav_ai_telemetry.json"
 KB_PATH = ROOT.parent / "data_kb" / "missions_kb.json"
 ENV_PATH = ROOT.parent / ".env"
-API_URL = "https://api.deepseek.com/chat/completions"
-HOTKEY_ID = 0x475441
-MOD_ALT = 0x0001
-VK_Q = 0x51
+WINDOW_SUBCLASS_ID = 0x475441
+HOTKEY_LABEL = "Num 1"
+WM_INPUT = 0x00FF
+RID_INPUT = 0x10000003
+RIDEV_INPUTSINK = 0x00000100
+RIDEV_REMOVE = 0x00000001
+RI_KEY_BREAK = 0x0001
+RI_KEY_EXTENDED = 0x0006
+NUMPAD1_SCAN_CODE = 0x4F
+WM_MOUSEACTIVATE = 0x0021
+MA_NOACTIVATE = 3
+GA_ROOT = 2
+GWL_EXSTYLE = -20
+WS_EX_NOACTIVATE = 0x08000000
+
+
+class RawInputDevice(ctypes.Structure):
+    _fields_ = [
+        ("usage_page", ctypes.wintypes.USHORT),
+        ("usage", ctypes.wintypes.USHORT),
+        ("flags", ctypes.wintypes.DWORD),
+        ("window", ctypes.wintypes.HWND),
+    ]
+
+
+class RawInputHeader(ctypes.Structure):
+    _fields_ = [
+        ("kind", ctypes.wintypes.DWORD),
+        ("size", ctypes.wintypes.DWORD),
+        ("device", ctypes.wintypes.HANDLE),
+        ("wparam", ctypes.wintypes.WPARAM),
+    ]
+
+
+class RawKeyboard(ctypes.Structure):
+    _fields_ = [
+        ("scan_code", ctypes.wintypes.USHORT),
+        ("flags", ctypes.wintypes.USHORT),
+        ("reserved", ctypes.wintypes.USHORT),
+        ("virtual_key", ctypes.wintypes.USHORT),
+        ("message", ctypes.wintypes.UINT),
+        ("extra_information", ctypes.wintypes.ULONG),
+    ]
+
+
+class RawKeyboardInput(ctypes.Structure):
+    _fields_ = [("header", RawInputHeader), ("keyboard", RawKeyboard)]
+
+
+ANALYSIS_PROMPT = (
+    "你是 GTA V Legacy 单机故事模式的中文任务助手。优先读截图底部的任务目标、左上角操作提示和小地图，"
+    "用当前遥测里的任务、导航和目标标记交叉确认，再用攻略步骤定位进度。攻略是参考，不能假定玩家正处在第一步，"
+    "也不要按任务编号猜下一关。自由活动时，如果地图上有明确可接的任务标记，指出一个看得到的标记；"
+    "否则提示打开地图。过场、暂停或画面不清时，明确说明并给出一个能确认目标的操作。"
+    "只给眼前一步，使用以下三行纯文本格式，避免剧透：\n"
+    "当前任务：任务名和正在做的事；无法确认时直说。\n"
+    "下一步：一个具体动作，带上可辨认的目标、位置或标记。\n"
+    "按键：优先照抄游戏画面提示，注明按一下、长按或松开。"
+    "只在操作明确且属于已知默认 PC 键位时给出键名，标为默认键位；不确定时写明该查哪个操作的键位。"
+    "默认参考：Esc 打开暂停菜单，F 上下车，方向键上打开手机，长按左 Alt 打开角色轮盘，"
+    "长按 Tab 打开武器轮盘，鼠标右键瞄准，左键射击，R 换弹。"
+    "不要把 E 当成通用互动键。用户改过键位时以画面提示和游戏设置为准。"
+)
 
 
 def load_local_env() -> None:
@@ -53,6 +117,36 @@ def format_num(value: object, digits: int = 1) -> str:
         return "?"
 
 
+def telemetry_age_seconds(data: dict) -> float | None:
+    timestamp = data.get("timestamp")
+    if isinstance(timestamp, int):
+        return (time.time() * 1000 - timestamp) / 1000
+    return None
+
+
+def gta_in_foreground() -> bool:
+    user32 = ctypes.windll.user32
+    title = ctypes.create_unicode_buffer(128)
+    user32.GetWindowTextW(user32.GetForegroundWindow(), title, len(title))
+    return title.value in {"Grand Theft Auto V", "Grand Theft Auto V Legacy"}
+
+
+def local_guidance(data: dict, age_seconds: float | None) -> str:
+    if not data or age_seconds is None or age_seconds >= 5:
+        return f"下一步：回到故事模式，等待遥测更新。\n分析：{HOTKEY_LABEL} 可重新识别游戏画面。"
+
+    objectives = data.get("active_objectives") or []
+    if any(target.get("has_gps_route") is True for target in objectives):
+        return "下一步：沿小地图导航线前往标记。\n按键：Esc → 地图，查看完整路线。"
+
+    if data.get("is_mission_active"):
+        if any(target.get("role") == "Destination_Route" for target in objectives):
+            return f"下一步：前往任务的黄色标记。\n按键：到达后看画面提示，或按 {HOTKEY_LABEL} 分析。"
+        return f"下一步：查看屏幕上的当前任务目标。\n分析：按 {HOTKEY_LABEL} 识别字幕和操作提示。"
+
+    return "下一步：在地图上找可接的任务标记。\n按键：Esc → 地图。"
+
+
 class Overlay:
     def __init__(self) -> None:
         self.root = Tk()
@@ -68,15 +162,16 @@ class Overlay:
         self.root.geometry(f"420x520+{self.root.winfo_screenwidth() - 440}+24")
         self.root.bind("<ButtonPress-1>", self.drag_start)
         self.root.bind("<B1-Motion>", self.drag_move)
-        self.root.bind("<Escape>", lambda _event: self.close())
 
         self.results: queue.Queue[tuple[str, str]] = queue.Queue()
         self.busy = False
-        self.hotkey_ready = False
+        self._raw_keyboard_registered = False
+        self._numpad_pressed = False
+        self._window_handler = None
         self.kb = self.read_kb()
         self.build_ui()
         self.root.after(200, self.refresh_telemetry)
-        self.root.after(100, self.poll_hotkey)
+        self.root.after_idle(self.configure_windows_overlay)
         self.root.after(100, self.poll_results)
         self.root.protocol("WM_DELETE_WINDOW", self.close)
 
@@ -89,11 +184,13 @@ class Overlay:
         self.telemetry = Label(self.root, text="正在读取遥测…", justify=LEFT, anchor="nw", fg="#f0f2ed", bg="#182022", font=("Consolas", 10), padx=10, pady=9, wraplength=390)
         self.telemetry.pack(fill=X, padx=10, pady=(0, 8))
 
-        Button(self.root, text="AI 战术分析 (Alt+Q)", command=self.request_analysis, fg="#101416", bg="#a4c6a8", activebackground="#c0dfc4", bd=0, font=("Segoe UI", 10, "bold"), pady=7).pack(fill=X, padx=10, pady=(0, 8))
-        Label(self.root, text="战术建议", fg="#dce6dd", bg="#101416", anchor="w", font=("Segoe UI", 9, "bold")).pack(fill=X, padx=12)
+        self.next_step = Label(self.root, text="正在确认任务线索…", justify=LEFT, anchor="nw", fg="#dce6dd", bg="#222e27", font=("Segoe UI", 10), padx=10, pady=7, wraplength=390)
+        self.next_step.pack(fill=X, padx=10, pady=(0, 8))
+        Button(self.root, text=f"分析下一步和按键 ({HOTKEY_LABEL})", command=self.request_analysis, fg="#101416", bg="#a4c6a8", activebackground="#c0dfc4", bd=0, font=("Segoe UI", 10, "bold"), pady=7).pack(fill=X, padx=10, pady=(0, 8))
+        Label(self.root, text="画面分析", fg="#dce6dd", bg="#101416", anchor="w", font=("Segoe UI", 9, "bold")).pack(fill=X, padx=12)
         self.advice = Text(self.root, wrap="word", bg="#182022", fg="#f0f2ed", insertbackground="#f0f2ed", relief="flat", padx=10, pady=8, font=("Segoe UI", 10))
         self.advice.pack(fill=BOTH, expand=True, padx=10, pady=(4, 8))
-        self.advice.insert(END, "按 Alt+Q 截取当前画面并请求战术分析。\nEsc 关闭悬浮窗。")
+        self.advice.insert(END, f"在游戏里按 {HOTKEY_LABEL}，识别当前任务、下一步和要按的键。\n点击右上角 × 关闭悬浮窗。")
         self.advice.configure(state="disabled")
         Label(self.root, text="拖动窗口可调整停靠位置", fg="#889495", bg="#101416", anchor="e", font=("Segoe UI", 8)).pack(fill=X, padx=12, pady=(0, 6))
 
@@ -111,15 +208,9 @@ class Overlay:
         except (OSError, json.JSONDecodeError):
             return {"missions": {}}
 
-    @staticmethod
-    def read_telemetry() -> dict:
-        try:
-            return json.loads(TELEMETRY_PATH.read_text(encoding="utf-8-sig"))
-        except (OSError, json.JSONDecodeError):
-            return {}
-
     def refresh_telemetry(self) -> None:
-        data = self.read_telemetry()
+        data = read_telemetry()
+        age_seconds = telemetry_age_seconds(data)
         if data:
             loc = data.get("location") or {}
             status = data.get("player_status") or {}
@@ -136,26 +227,76 @@ class Overlay:
                 f"   ({format_num(loc.get('x'), 2)}, {format_num(loc.get('y'), 2)}, {format_num(loc.get('z'), 2)})\n"
                 f"🎯 {mission} ({mission_id})\n🏁 距目标点: {dist_text} ({role})"
             )
+            if age_seconds is not None and age_seconds >= 5:
+                text = f"遥测未更新（{age_seconds:.0f} 秒前）\n{text}"
         else:
-            text = f"遥测文件尚不可用\n{TELEMETRY_PATH}"
+            text = f"遥测文件尚不可用\n{telemetry_path()}"
         self.telemetry.configure(text=text)
+        self.next_step.configure(text=local_guidance(data, age_seconds))
         self.root.after(200, self.refresh_telemetry)
 
-    def poll_hotkey(self) -> None:
-        if os.name == "nt":
-            if not self.hotkey_ready:
-                self.hotkey_ready = bool(ctypes.windll.user32.RegisterHotKey(self.root.winfo_id(), HOTKEY_ID, MOD_ALT, VK_Q))
-            msg = ctypes.wintypes.MSG()
-            while ctypes.windll.user32.PeekMessageW(ctypes.byref(msg), self.root.winfo_id(), 0x0312, 0x0312, 1):
-                if msg.wParam == HOTKEY_ID:
-                    self.request_analysis()
-        self.root.after(40, self.poll_hotkey)
+    def configure_windows_overlay(self) -> None:
+        if os.name != "nt":
+            return
+
+        hwnd = self.root.winfo_id()
+        user32 = ctypes.windll.user32
+        user32.GetAncestor.argtypes = (ctypes.wintypes.HWND, ctypes.wintypes.UINT)
+        user32.GetAncestor.restype = ctypes.wintypes.HWND
+        user32.GetWindowLongW.argtypes = (ctypes.wintypes.HWND, ctypes.c_int)
+        user32.SetWindowLongW.argtypes = (ctypes.wintypes.HWND, ctypes.c_int, ctypes.wintypes.LONG)
+        frame = user32.GetAncestor(hwnd, GA_ROOT) or hwnd
+        style = user32.GetWindowLongW(frame, GWL_EXSTYLE)
+        user32.SetWindowLongW(frame, GWL_EXSTYLE, style | WS_EX_NOACTIVATE)
+
+        controls = ctypes.windll.comctl32
+        message_args = (ctypes.wintypes.HWND, ctypes.wintypes.UINT, ctypes.wintypes.WPARAM, ctypes.wintypes.LPARAM)
+        subclass_proc = ctypes.WINFUNCTYPE(ctypes.c_ssize_t, *message_args, ctypes.c_size_t, ctypes.c_size_t)
+        controls.DefSubclassProc.argtypes = message_args
+        controls.DefSubclassProc.restype = ctypes.c_ssize_t
+        controls.SetWindowSubclass.argtypes = (ctypes.wintypes.HWND, subclass_proc, ctypes.c_size_t, ctypes.c_size_t)
+        controls.RemoveWindowSubclass.argtypes = (ctypes.wintypes.HWND, subclass_proc, ctypes.c_size_t)
+        user32.GetForegroundWindow.restype = ctypes.wintypes.HWND
+        user32.GetWindowTextW.argtypes = (ctypes.wintypes.HWND, ctypes.wintypes.LPWSTR, ctypes.c_int)
+        user32.RegisterRawInputDevices.argtypes = (ctypes.POINTER(RawInputDevice), ctypes.wintypes.UINT, ctypes.wintypes.UINT)
+        user32.GetRawInputData.argtypes = (ctypes.wintypes.HANDLE, ctypes.wintypes.UINT, ctypes.c_void_p,
+                                         ctypes.POINTER(ctypes.wintypes.UINT), ctypes.wintypes.UINT)
+        user32.GetRawInputData.restype = ctypes.wintypes.UINT
+
+        @subclass_proc
+        def handle_message(window, message, wparam, lparam, _subclass_id, _data):
+            if message == WM_MOUSEACTIVATE:
+                return MA_NOACTIVATE
+            if message == WM_INPUT:
+                packet = RawKeyboardInput()
+                size = ctypes.wintypes.UINT(ctypes.sizeof(packet))
+                copied = user32.GetRawInputData(lparam, RID_INPUT, ctypes.byref(packet), ctypes.byref(size),
+                                               ctypes.sizeof(RawInputHeader))
+                if copied == ctypes.sizeof(packet) and packet.header.kind == 1:
+                    self.handle_numpad_input(packet.keyboard.scan_code, packet.keyboard.flags)
+            return controls.DefSubclassProc(window, message, wparam, lparam)
+
+        if not controls.SetWindowSubclass(frame, handle_message, WINDOW_SUBCLASS_ID, 0):
+            return
+        self._window_handler = handle_message
+        self._window_handle = frame
+        keyboard = RawInputDevice(0x01, 0x06, RIDEV_INPUTSINK, frame)
+        self._raw_keyboard_registered = bool(user32.RegisterRawInputDevices(ctypes.byref(keyboard), 1, ctypes.sizeof(keyboard)))
+
+    def handle_numpad_input(self, scan_code: int, flags: int) -> None:
+        # The extended key with the same scan code is the separate End key.
+        if scan_code != NUMPAD1_SCAN_CODE or flags & RI_KEY_EXTENDED:
+            return
+        pressed = not (flags & RI_KEY_BREAK)
+        if pressed and not self._numpad_pressed and gta_in_foreground():
+            self.results.put(("analyze", ""))
+        self._numpad_pressed = pressed
 
     def request_analysis(self) -> None:
         if self.busy:
             return
         self.busy = True
-        self.set_advice("正在截取画面并分析…\n")
+        self.set_advice("正在识别任务目标和按键提示…\n")
         threading.Thread(target=self.analyze_worker, daemon=True).start()
 
     def analyze_worker(self) -> None:
@@ -171,46 +312,30 @@ class Overlay:
             output = io.BytesIO()
             image.save(output, format="JPEG", quality=78, optimize=True)
             screenshot = base64.b64encode(output.getvalue()).decode("ascii")
-            telemetry = self.read_telemetry()
+            telemetry = read_telemetry()
+            age_seconds = telemetry_age_seconds(telemetry)
+            if age_seconds is None or age_seconds >= 5:
+                telemetry = {}
             mission_id = telemetry.get("active_mission_script", "")
             mission = self.kb.get("missions", {}).get(mission_id, {})
-            api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
-            if not api_key:
-                raise RuntimeError("未配置 DEEPSEEK_API_KEY。请在 .env 中填写你自己的 API key 后重启悬浮窗。")
-            model = os.environ.get("DEEPSEEK_MODEL", "deepseek-flash").strip() or "deepseek-flash"
-            context = json.dumps({"telemetry": telemetry, "mission_guide": mission}, ensure_ascii=False)
-            prompt = "你是 GTA V 单机剧情任务实时战术助手。结合截图中的原生任务字幕、路况和战况，以及遥测和攻略数据库，简短回答：当前步骤判断、下一步具体行动、金牌条件提醒。不要臆测看不清的目标；标出不确定性。"
-            payload = {
-                "model": model,
-                "stream": True,
-                "messages": [{"role": "user", "content": [
-                    {"type": "text", "text": prompt + "\n\n遥测与任务攻略：" + context},
-                    {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64," + screenshot}}
-                ]}]
-            }
-            request = urllib.request.Request(API_URL, data=json.dumps(payload).encode("utf-8"), headers={"Authorization": "Bearer " + api_key, "Content-Type": "application/json"}, method="POST")
-            with urllib.request.urlopen(request, timeout=90) as response:
-                for raw in response:
-                    line = raw.decode("utf-8", "replace").strip()
-                    if not line.startswith("data:"):
-                        continue
-                    chunk = line[5:].strip()
-                    if chunk == "[DONE]":
-                        break
-                    try:
-                        event = json.loads(chunk)
-                        content = event.get("choices", [{}])[0].get("delta", {}).get("content", "")
-                        if isinstance(content, str) and content:
-                            self.results.put(("append", content))
-                    except (json.JSONDecodeError, IndexError, AttributeError):
-                        continue
+            context = {"telemetry": telemetry, "telemetry_current": bool(telemetry), "mission_guide": mission}
+            received_text = False
+            for content in stream_multimodal(ANALYSIS_PROMPT, context, screenshot):
+                received_text = True
+                self.results.put(("append", content))
+            if not received_text:
+                raise RuntimeError("模型未返回战术建议")
             self.results.put(("done", ""))
         except urllib.error.HTTPError as exc:
             try:
-                detail = exc.read().decode("utf-8", "replace")[:1000]
+                detail = exc.read(4096).decode("utf-8", "replace")
             except OSError:
                 detail = str(exc)
-            self.results.put(("error", f"DeepSeek API 返回 HTTP {exc.code}: {detail}"))
+            for name in ("PARATERA_API_KEY", "DEEPSEEK_API_KEY"):
+                key = os.environ.get(name, "").strip()
+                if key:
+                    detail = detail.replace(key, "[已隐藏]")
+            self.results.put(("error", f"模型 API 返回 HTTP {exc.code}: {detail[:1000]}"))
         except Exception as exc:
             self.results.put(("error", f"分析失败：{exc}"))
 
@@ -228,7 +353,10 @@ class Overlay:
                 kind, value = self.results.get_nowait()
             except queue.Empty:
                 break
-            if kind == "append":
+            if kind == "analyze":
+                if gta_in_foreground():
+                    self.request_analysis()
+            elif kind == "append":
                 self.set_advice(value, append=True)
             else:
                 if kind == "error":
@@ -237,8 +365,11 @@ class Overlay:
         self.root.after(100, self.poll_results)
 
     def close(self) -> None:
-        if os.name == "nt" and self.hotkey_ready:
-            ctypes.windll.user32.UnregisterHotKey(self.root.winfo_id(), HOTKEY_ID)
+        if self._raw_keyboard_registered:
+            keyboard = RawInputDevice(0x01, 0x06, RIDEV_REMOVE, None)
+            ctypes.windll.user32.RegisterRawInputDevices(ctypes.byref(keyboard), 1, ctypes.sizeof(keyboard))
+        if self._window_handler is not None:
+            ctypes.windll.comctl32.RemoveWindowSubclass(self._window_handle, self._window_handler, WINDOW_SUBCLASS_ID)
         self.root.destroy()
 
     def run(self) -> None:
