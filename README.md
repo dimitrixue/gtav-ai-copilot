@@ -12,6 +12,8 @@
 4. 启动 Story Mode 并验证：`py .\scripts\verify_telemetry.py`。
 5. 启动客户端：`py .\copilot_app\overlay_ui.py`。
 
+在游戏里按上排 `2` 或小键盘 `2`，也可以点击悬浮窗里的「问引路人」，即可输入问题。按 `Enter` 发送，按 `Esc` 取消，回复显示在悬浮窗中。小键盘 `Num 1` 用于分析当前游戏画面。
+
 ## 双人分工
 
 - **成员 A：知识库与数据检索工程师，只改 `data_kb/`。** 负责 69 个主线、58 个支线任务及股票暗杀攻略的数据扩充，构建 SQLite/LightRAG，并维护 `get_tactical_context(telemetry: dict) -> dict`。

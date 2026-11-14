@@ -1,9 +1,7 @@
 from __future__ import annotations
 
-import base64
 import ctypes
 import ctypes.wintypes
-import io
 import json
 import os
 import queue
@@ -11,13 +9,13 @@ import threading
 import time
 import urllib.error
 from pathlib import Path
-from tkinter import BOTH, END, LEFT, RIGHT, X, Y, Button, Frame, Label, Text, Tk
+from tkinter import BOTH, END, LEFT, RIGHT, X, Button, Entry, Frame, Label, Text, Tk, Toplevel
 
 if __package__:
-    from .capture_and_telemetry import read_telemetry, telemetry_path
+    from .capture_and_telemetry import capture_screen_base64, read_telemetry, telemetry_path
     from .deepseek_client import stream_multimodal
 else:
-    from capture_and_telemetry import read_telemetry, telemetry_path
+    from capture_and_telemetry import capture_screen_base64, read_telemetry, telemetry_path
     from deepseek_client import stream_multimodal
 
 try:
@@ -43,6 +41,8 @@ RIDEV_REMOVE = 0x00000001
 RI_KEY_BREAK = 0x0001
 RI_KEY_EXTENDED = 0x0006
 NUMPAD1_SCAN_CODE = 0x4F
+NUMPAD2_SCAN_CODE = 0x50
+NUMBER_ROW_2_SCAN_CODE = 0x03
 WM_MOUSEACTIVATE = 0x0021
 MA_NOACTIVATE = 3
 GA_ROOT = 2
@@ -98,6 +98,11 @@ ANALYSIS_PROMPT = (
     "不要把 E 当成通用互动键。用户改过键位时以画面提示和游戏设置为准。"
 )
 
+QUESTION_PROMPT = (
+    "你是「引路人」，GTA V Legacy 单机故事模式的中文助手。直接回答玩家的问题，简明具体，避免剧透。"
+    "任务和位置参考提问时的遥测与攻略。没有足够信息时说明需要确认什么，不要猜测。"
+)
+
 
 def load_local_env() -> None:
     if not ENV_PATH.exists():
@@ -124,11 +129,14 @@ def telemetry_age_seconds(data: dict) -> float | None:
     return None
 
 
-def gta_in_foreground() -> bool:
+def gta_foreground_window() -> int | None:
     user32 = ctypes.windll.user32
+    user32.GetForegroundWindow.restype = ctypes.wintypes.HWND
+    user32.GetWindowTextW.argtypes = (ctypes.wintypes.HWND, ctypes.wintypes.LPWSTR, ctypes.c_int)
+    window = user32.GetForegroundWindow()
     title = ctypes.create_unicode_buffer(128)
-    user32.GetWindowTextW(user32.GetForegroundWindow(), title, len(title))
-    return title.value in {"Grand Theft Auto V", "Grand Theft Auto V Legacy"}
+    user32.GetWindowTextW(window, title, len(title))
+    return window if title.value in {"Grand Theft Auto V", "Grand Theft Auto V Legacy"} else None
 
 
 def local_guidance(data: dict, age_seconds: float | None) -> str:
@@ -167,7 +175,10 @@ class Overlay:
         self.busy = False
         self._raw_keyboard_registered = False
         self._numpad_pressed = False
+        self._question_keys_pressed: set[int] = set()
         self._window_handler = None
+        self.question_window: Toplevel | None = None
+        self.question_send: Button | None = None
         self.kb = self.read_kb()
         self.build_ui()
         self.root.after(200, self.refresh_telemetry)
@@ -187,10 +198,11 @@ class Overlay:
         self.next_step = Label(self.root, text="正在确认任务线索…", justify=LEFT, anchor="nw", fg="#dce6dd", bg="#222e27", font=("Segoe UI", 10), padx=10, pady=7, wraplength=390)
         self.next_step.pack(fill=X, padx=10, pady=(0, 8))
         Button(self.root, text=f"分析下一步和按键 ({HOTKEY_LABEL})", command=self.request_analysis, fg="#101416", bg="#a4c6a8", activebackground="#c0dfc4", bd=0, font=("Segoe UI", 10, "bold"), pady=7).pack(fill=X, padx=10, pady=(0, 8))
-        Label(self.root, text="画面分析", fg="#dce6dd", bg="#101416", anchor="w", font=("Segoe UI", 9, "bold")).pack(fill=X, padx=12)
+        Button(self.root, text="问引路人 (2)", command=self.open_question, fg="#dce6dd", bg="#293033", activebackground="#3a4649", bd=0, font=("Segoe UI", 10), pady=5).pack(fill=X, padx=10, pady=(0, 8))
+        Label(self.root, text="引路人", fg="#dce6dd", bg="#101416", anchor="w", font=("Segoe UI", 9, "bold")).pack(fill=X, padx=12)
         self.advice = Text(self.root, wrap="word", bg="#182022", fg="#f0f2ed", insertbackground="#f0f2ed", relief="flat", padx=10, pady=8, font=("Segoe UI", 10))
         self.advice.pack(fill=BOTH, expand=True, padx=10, pady=(4, 8))
-        self.advice.insert(END, f"在游戏里按 {HOTKEY_LABEL}，识别当前任务、下一步和要按的键。\n点击右上角 × 关闭悬浮窗。")
+        self.advice.insert(END, f"按 {HOTKEY_LABEL} 分析游戏画面。\n按上排 2 或小键盘 2 打开文字提问。")
         self.advice.configure(state="disabled")
         Label(self.root, text="拖动窗口可调整停靠位置", fg="#889495", bg="#101416", anchor="e", font=("Segoe UI", 8)).pack(fill=X, padx=12, pady=(0, 6))
 
@@ -256,8 +268,6 @@ class Overlay:
         controls.DefSubclassProc.restype = ctypes.c_ssize_t
         controls.SetWindowSubclass.argtypes = (ctypes.wintypes.HWND, subclass_proc, ctypes.c_size_t, ctypes.c_size_t)
         controls.RemoveWindowSubclass.argtypes = (ctypes.wintypes.HWND, subclass_proc, ctypes.c_size_t)
-        user32.GetForegroundWindow.restype = ctypes.wintypes.HWND
-        user32.GetWindowTextW.argtypes = (ctypes.wintypes.HWND, ctypes.wintypes.LPWSTR, ctypes.c_int)
         user32.RegisterRawInputDevices.argtypes = (ctypes.POINTER(RawInputDevice), ctypes.wintypes.UINT, ctypes.wintypes.UINT)
         user32.GetRawInputData.argtypes = (ctypes.wintypes.HANDLE, ctypes.wintypes.UINT, ctypes.c_void_p,
                                          ctypes.POINTER(ctypes.wintypes.UINT), ctypes.wintypes.UINT)
@@ -273,58 +283,151 @@ class Overlay:
                 copied = user32.GetRawInputData(lparam, RID_INPUT, ctypes.byref(packet), ctypes.byref(size),
                                                ctypes.sizeof(RawInputHeader))
                 if copied == ctypes.sizeof(packet) and packet.header.kind == 1:
-                    self.handle_numpad_input(packet.keyboard.scan_code, packet.keyboard.flags)
+                    self.handle_keyboard_input(packet.keyboard.scan_code, packet.keyboard.flags)
             return controls.DefSubclassProc(window, message, wparam, lparam)
 
         if not controls.SetWindowSubclass(frame, handle_message, WINDOW_SUBCLASS_ID, 0):
+            self.set_advice("无法启用游戏内快捷键。可以点击面板按钮。")
             return
         self._window_handler = handle_message
         self._window_handle = frame
         keyboard = RawInputDevice(0x01, 0x06, RIDEV_INPUTSINK, frame)
         self._raw_keyboard_registered = bool(user32.RegisterRawInputDevices(ctypes.byref(keyboard), 1, ctypes.sizeof(keyboard)))
+        if not self._raw_keyboard_registered:
+            self.set_advice("无法注册游戏内快捷键。可以点击面板按钮。")
 
-    def handle_numpad_input(self, scan_code: int, flags: int) -> None:
+    def handle_keyboard_input(self, scan_code: int, flags: int) -> None:
+        if flags & RI_KEY_EXTENDED:
+            return
+        if scan_code in (NUMBER_ROW_2_SCAN_CODE, NUMPAD2_SCAN_CODE):
+            if flags & RI_KEY_BREAK:
+                self._question_keys_pressed.discard(scan_code)
+            elif scan_code not in self._question_keys_pressed and gta_foreground_window():
+                self._question_keys_pressed.add(scan_code)
+                self.results.put(("question", ""))
+            return
         # The extended key with the same scan code is the separate End key.
-        if scan_code != NUMPAD1_SCAN_CODE or flags & RI_KEY_EXTENDED:
+        if scan_code != NUMPAD1_SCAN_CODE:
             return
         pressed = not (flags & RI_KEY_BREAK)
-        if pressed and not self._numpad_pressed and gta_in_foreground():
+        if pressed and not self._numpad_pressed and gta_foreground_window():
             self.results.put(("analyze", ""))
         self._numpad_pressed = pressed
 
     def request_analysis(self) -> None:
-        if self.busy:
+        if self.busy or self.question_window is not None:
             return
         self.busy = True
         self.set_advice("正在识别任务目标和按键提示…\n")
-        threading.Thread(target=self.analyze_worker, daemon=True).start()
+        threading.Thread(target=self.request_worker, daemon=True).start()
 
-    def analyze_worker(self) -> None:
+    def open_question(self) -> None:
+        if self.question_window is not None:
+            self.question_window.lift()
+            return
+
+        context = self.tactical_context()
+        game_window = gta_foreground_window() if os.name == "nt" else None
+        window = Toplevel(self.root)
+        self.question_window = window
+        window.title("问引路人")
+        window.configure(bg="#101416")
+        window.attributes("-topmost", True)
+        window.resizable(False, False)
+        window.geometry(f"+{max(0, self.root.winfo_x())}+{max(0, self.root.winfo_y() + 110)}")
+
+        def close_question(_event=None) -> str:
+            if game_window and window.focus_displayof() is not None:
+                user32 = ctypes.windll.user32
+                user32.SetForegroundWindow.argtypes = (ctypes.wintypes.HWND,)
+                user32.SetForegroundWindow(game_window)
+            window.destroy()
+            self.question_window = None
+            self.question_send = None
+            return "break"
+
+        window.protocol("WM_DELETE_WINDOW", close_question)
+        window.bind("<Escape>", close_question)
+
+        Label(window, text="想问引路人什么？", fg="#f0f2ed", bg="#101416", font=("Segoe UI", 11)).pack(anchor="w", padx=12, pady=(10, 6))
+        entry = Entry(window, width=34, font=("Segoe UI", 12))
+        entry.pack(fill=X, padx=12, ipady=4)
+
+        def ignore_shortcut_repeat(_event) -> str | None:
+            if self._question_keys_pressed:
+                return "break"
+            return None
+
+        for key in ("2", "KP_2", "KP_Down"):
+            entry.bind(f"<KeyPress-{key}>", ignore_shortcut_repeat)
+
+        def submit(_event=None) -> str:
+            question = entry.get().strip()
+            if question and not self.busy:
+                close_question()
+                self.busy = True
+                self.set_advice(f"你：{question}\n\n引路人：")
+                threading.Thread(target=self.request_worker, args=(question, context), daemon=True).start()
+            return "break"
+
+        controls = Frame(window, bg="#101416")
+        controls.pack(fill=X, padx=12, pady=(8, 10))
+        input_hint = "Win + 空格切换输入法\nEnter 发送 · Esc 取消" if os.name == "nt" else "Enter 发送 · Esc 取消"
+        Label(controls, text=input_hint, justify=LEFT, fg="#a4b0b0", bg="#101416", font=("Segoe UI", 9)).pack(side=LEFT)
+        self.question_send = Button(controls, command=submit, font=("Segoe UI", 10))
+        self.question_send.pack(side=RIGHT)
+        self.update_question_send()
+        window.bind("<Return>", submit)
+        window.bind("<KP_Enter>", submit)
+        window.wait_visibility()
+        if os.name == "nt":
+            user32 = ctypes.windll.user32
+            user32.SetForegroundWindow.argtypes = (ctypes.wintypes.HWND,)
+            frame = user32.GetAncestor(window.winfo_id(), GA_ROOT)
+            if not user32.SetForegroundWindow(frame):
+                entry.focus_set()
+                return
+        entry.focus_force()
+
+    def update_question_send(self) -> None:
+        if self.question_send is not None:
+            self.question_send.configure(
+                text="等待上一条回复…" if self.busy else "发送",
+                state="disabled" if self.busy else "normal",
+            )
+
+    def tactical_context(self) -> dict:
+        telemetry = read_telemetry()
+        age_seconds = telemetry_age_seconds(telemetry)
+        if age_seconds is None or age_seconds >= 5:
+            telemetry = {}
+        mission_id = telemetry.get("active_mission_script", "")
+        mission = self.kb.get("missions", {}).get(mission_id, {})
+        return {"telemetry": telemetry, "telemetry_current": bool(telemetry), "mission_guide": mission}
+
+    @staticmethod
+    def capture_screenshot() -> str:
+        if Image is None:
+            raise RuntimeError("缺少 Pillow。请运行：py -m pip install Pillow")
+        if mss is None:
+            raise RuntimeError("缺少 mss。启动时会尝试自动安装；也可运行：py -m pip install mss")
+        return capture_screen_base64()
+
+    def request_worker(self, question: str = "", context: dict | None = None) -> None:
         try:
-            if Image is None:
-                raise RuntimeError("缺少 Pillow。请运行：py -m pip install Pillow")
-            if mss is None:
-                raise RuntimeError("缺少 mss。启动时会尝试自动安装；也可运行：py -m pip install mss")
-            with mss.mss() as capture:
-                shot = capture.grab(capture.monitors[0])
-                image = Image.frombytes("RGB", shot.size, shot.rgb)
-            image.thumbnail((1600, 900))
-            output = io.BytesIO()
-            image.save(output, format="JPEG", quality=78, optimize=True)
-            screenshot = base64.b64encode(output.getvalue()).decode("ascii")
-            telemetry = read_telemetry()
-            age_seconds = telemetry_age_seconds(telemetry)
-            if age_seconds is None or age_seconds >= 5:
-                telemetry = {}
-            mission_id = telemetry.get("active_mission_script", "")
-            mission = self.kb.get("missions", {}).get(mission_id, {})
-            context = {"telemetry": telemetry, "telemetry_current": bool(telemetry), "mission_guide": mission}
+            if context is None:
+                context = self.tactical_context()
+            if question:
+                response = stream_multimodal(f"{QUESTION_PROMPT}\n\n玩家的问题：{question}", context)
+            else:
+                screenshot = self.capture_screenshot()
+                response = stream_multimodal(ANALYSIS_PROMPT, context, screenshot)
             received_text = False
-            for content in stream_multimodal(ANALYSIS_PROMPT, context, screenshot):
+            for content in response:
                 received_text = True
                 self.results.put(("append", content))
             if not received_text:
-                raise RuntimeError("模型未返回战术建议")
+                raise RuntimeError("模型未返回回复")
             self.results.put(("done", ""))
         except urllib.error.HTTPError as exc:
             try:
@@ -337,7 +440,8 @@ class Overlay:
                     detail = detail.replace(key, "[已隐藏]")
             self.results.put(("error", f"模型 API 返回 HTTP {exc.code}: {detail[:1000]}"))
         except Exception as exc:
-            self.results.put(("error", f"分析失败：{exc}"))
+            action = "提问" if question else "分析"
+            self.results.put(("error", f"{action}失败：{exc}"))
 
     def set_advice(self, value: str, append: bool = False) -> None:
         self.advice.configure(state="normal")
@@ -354,14 +458,18 @@ class Overlay:
             except queue.Empty:
                 break
             if kind == "analyze":
-                if gta_in_foreground():
+                if gta_foreground_window():
                     self.request_analysis()
+            elif kind == "question":
+                if gta_foreground_window():
+                    self.open_question()
             elif kind == "append":
                 self.set_advice(value, append=True)
             else:
                 if kind == "error":
                     self.set_advice(value, append=True)
                 self.busy = False
+                self.update_question_send()
         self.root.after(100, self.poll_results)
 
     def close(self) -> None:

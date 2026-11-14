@@ -17,7 +17,7 @@ class _NoRedirect(urllib.request.HTTPRedirectHandler):
         return None
 
 
-def stream_multimodal(prompt: str, context: dict, screenshot_base64: str) -> Iterator[str]:
+def stream_multimodal(prompt: str, context: dict, screenshot_base64: str | None = None) -> Iterator[str]:
     api_key = os.environ.get("PARATERA_API_KEY", "").strip()
     if api_key:
         base_url = os.environ.get("PARATERA_BASE_URL", PARATERA_BASE_URL).strip().rstrip("/")
@@ -26,7 +26,7 @@ def stream_multimodal(prompt: str, context: dict, screenshot_base64: str) -> Ite
         url = base_url + "/v1/chat/completions"
         model = os.environ.get("PARATERA_MODEL", "").strip()
         if not model:
-            raise RuntimeError("请在 .env 中配置支持图片输入的 PARATERA_MODEL")
+            raise RuntimeError("请在 .env 中配置 PARATERA_MODEL")
         open_request = urllib.request.build_opener(_NoRedirect()).open
     else:
         api_key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
@@ -35,13 +35,16 @@ def stream_multimodal(prompt: str, context: dict, screenshot_base64: str) -> Ite
         url = API_URL
         model = os.environ.get("DEEPSEEK_MODEL", "deepseek-flash").strip() or "deepseek-flash"
         open_request = urllib.request.urlopen
+    message = prompt + "\n\nTelemetry and tactical context:\n" + json.dumps(context, ensure_ascii=False)
+    if screenshot_base64 is not None:
+        message = [
+            {"type": "text", "text": message},
+            {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64," + screenshot_base64}},
+        ]
     payload = {
         "model": model,
         "stream": True,
-        "messages": [{"role": "user", "content": [
-            {"type": "text", "text": prompt + "\n\nTelemetry and tactical context:\n" + json.dumps(context, ensure_ascii=False)},
-            {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64," + screenshot_base64}},
-        ]}],
+        "messages": [{"role": "user", "content": message}],
     }
     request = urllib.request.Request(
         url,
